@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
 
-const firstName = "bhagwan";
-const Job = 'teacher';
-const birthyear = 2023;
-const year = 1998
-console.log("hi I'm" +' '+ firstName  +' '+ "as" +' '+ "a"+' ' +Job+' '+ "of"+' '+ (birthyear - year) + " Year  old");
+// using normal method
+      const firstName = "bhagwan";
+      const Job = 'teacher';
+      const birthyear = 2023;
+      const year = 1998
+      console.log("hi I'm" +' '+ firstName  +' '+ "as" +' '+ "a"+' ' +Job+' '+ "of"+' '+ (birthyear - year) + " Year  old");
 
-// Template Litrarals
-const JohnNew = `i'm ${firstName},a cool ${Job} of ${birthyear-year}years old!`;
-console.log(JohnNew);
+      // Template Litrarals
+      const JohnNew = `i'm ${firstName},a cool ${Job} of ${birthyear-year}years old!`;
+      console.log(JohnNew);
 
+
+    //   here we can write multiple lines using template Litrarals
+      console.log('string with \n\
+      multiple \n\
+      lines');
     </script>
-</body>
+  </body>
 </html>
