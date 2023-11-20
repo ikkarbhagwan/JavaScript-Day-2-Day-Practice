@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    
+      const massMark = 75;
+      const heightMark = 1.75;
+
+      const massJohn = 80; //
+      const heightJohn = 1.8; //
+
+      // Calculate BMIs
+      const BMIMark = massMark / (heightMark * heightMark);
+      const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+      // Log BMIs
+      console.log("Mark's BMI:", BMIMark);
+      console.log("John's BMI:", BMIJohn);
+
+      // BONUS
+      const markHigherBMI = BMIMark > BMIJohn;
+
+      //the console
+      console.log("Is Mark's BMI higher than John's BMI?", markHigherBMI);
+    </script>
+  </body>
+</html>
