@@ -13,18 +13,33 @@
       console.log(Number(inputYear) + 12);
 
       let str = "thsi is wrong speling";
-      if(str.length >0){
-        str = [str[0].toUpperCase(),...str.slice(1)].join('');
-
+      if (str.length > 0) {
+        str = [str[0].toUpperCase(), ...str.slice(1)].join("");
       }
       console.log(str);
 
       // here we converted a strings and add Number
-      
-      let New = '1999';
-      console.log(Number(New)+10);
-    
 
+      let New = "1999";
+      console.log(Number(New) + 10);
+
+      console.log(Number("john ikkar"));
+      console.log(typeof New);
+
+      // type coercion examples
+
+      console.log(`i am` + 23 + `years old`);
+      console.log(`23` - `12` - `10`);
+      console.log(`23` * `1` * `10`);
+      console.log(`20` / `3`);
+
+      let n = `1` + 1;
+      n = n - 1;
+      console.log(n); 
+      // 10
+
+      let b = 2 + 3 + 5 + `2`;
+           console.log(b);  // 102
     </script>
   </body>
 </html>
