@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const dolphinsScores = [96, 108, 89];
+      const koalasScores = [88, 91, 110];
+
+
+      // Calculate average scores
+
+      const AvarageScoreDolphins =
+        dolphinsScores.reduce((sum, score) => sum + score, 0) /
+        dolphinsScores.length;
+      const AvarageScoreKoalas =
+        koalasScores.reduce((sum, score) => sum + score, 0) /
+        koalasScores.length;
+
+        // Compare average scores and determine the winner
+
+
+      if (AvarageScoreDolphins > AvarageScoreKoalas) {
+        console.log("Dolphin is Winerr !!");
+      } else if (averageScoreKoalas > averageScoreDolphins) {
+        console.log("Koalas is wineer !!");
+      } else {
+        console.log("Both win the trophy!!");
+      }
+
+      console.log(AvarageScoreDolphins, AvarageScoreKoalas);
+    </script>
+  </body>
+</html>
