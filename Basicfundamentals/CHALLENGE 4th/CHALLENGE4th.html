@@ -7,31 +7,25 @@
   </head>
   <body>
     <script>
-      const dolphinsScores = [96, 108, 89];
-      const koalasScores = [88, 91, 110];
+      // Data
 
+      const DolphinsScore = [110, 85, 90];
+      const KoalasScore = [88, 99, 110];
 
-      // Calculate average scores
-
-      const AvarageScoreDolphins =
-        dolphinsScores.reduce((sum, score) => sum + score, 0) /
-        dolphinsScores.length;
+      // Calcualte Avarage SCores
+      const AvarageScoreDolphin =
+        DolphinsScore.reduce((sum, score) => sum + score, 0) /
+        DolphinsScore.length;
       const AvarageScoreKoalas =
-        koalasScores.reduce((sum, score) => sum + score, 0) /
-        koalasScores.length;
+        KoalasScore.reduce((sum, score) => sum + score, 0) / KoalasScore.length;
 
-        // Compare average scores and determine the winner
-
-
-      if (AvarageScoreDolphins > AvarageScoreKoalas) {
-        console.log("Dolphin is Winerr !!");
-      } else if (averageScoreKoalas > averageScoreDolphins) {
-        console.log("Koalas is wineer !!");
+      if (AvarageScoreDolphin > AvarageScoreKoalas) {
+        console.log("Dolphin is winner !!");
+      } else if (AvarageScoreKoalas > AvarageScoreDolphin) {
+        console.log("Koals is Winner !!");
       } else {
-        console.log("Both win the trophy!!");
+        console.log("both Are Winner !!");
       }
-
-      console.log(AvarageScoreDolphins, AvarageScoreKoalas);
     </script>
   </body>
 </html>
