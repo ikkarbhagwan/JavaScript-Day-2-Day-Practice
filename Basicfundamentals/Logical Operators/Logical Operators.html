@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const hasDriverlisence = false;
+      const hasGoodVision = true;
+
+      console.log(hasDriverlisence && hasGoodVision);
+      console.log(hasDriverlisence || hasGoodVision);
+      console.log(!hasGoodVision);
+
+      if (hasDriverlisence && hasGoodVision) {
+          console.log("srah can drive ...");
+      } else {
+          console.log("srah not drive ...");
+      }
+
+      const isTired = false;
+      console.log(hasDriverlisence && hasGoodVision && isTired);
+
+      if (hasGoodVision && hasDriverlisence && !isTired) {
+        console.log("Sarrah is able to drivbe !!!");
+      } else {
+        console.log("someone else have to drive!!");
+      }
+    </script>
+  </body>
+</html>

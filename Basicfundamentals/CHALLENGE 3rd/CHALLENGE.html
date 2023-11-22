@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// Data 1
+const dolphinsScore1 = 96;
+const dolphinsScore2 = 108;
+const dolphinsScore3 = 89;
+
+const koalasScore1 = 88;
+const koalasScore2 = 91;
+const koalasScore3 = 110;
+
+// Data Bonus 1
+const dolphinsBonus1Score1 = 97;
+const dolphinsBonus1Score2 = 112;
+const dolphinsBonus1Score3 = 101;
+
+const koalasBonus1Score1 = 109;
+const koalasBonus1Score2 = 95;
+const koalasBonus1Score3 = 123;
+
+// Data Bonus 2
+const dolphinsBonus2Score1 = 97;
+const dolphinsBonus2Score2 = 112;
+const dolphinsBonus2Score3 = 101;
+
+const koalasBonus2Score1 = 109;
+const koalasBonus2Score2 = 95;
+const koalasBonus2Score3 = 106;
+
+// Function to calculate average score
+const calculateAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+// Calculate average scores
+const dolphinsAverage = calculateAverage(dolphinsScore1, dolphinsScore2, dolphinsScore3);
+const koalasAverage = calculateAverage(koalasScore1, koalasScore2, koalasScore3);
+
+const dolphinsBonus1Average = calculateAverage(dolphinsBonus1Score1, dolphinsBonus1Score2, dolphinsBonus1Score3);
+const koalasBonus1Average = calculateAverage(koalasBonus1Score1, koalasBonus1Score2, koalasBonus1Score3);
+
+const dolphinsBonus2Average = calculateAverage(dolphinsBonus2Score1, dolphinsBonus2Score2, dolphinsBonus2Score3);
+const koalasBonus2Average = calculateAverage(koalasBonus2Score1, koalasBonus2Score2, koalasBonus2Score3);
+
+console.log("Data 1 - Dolphins Average:", dolphinsAverage);
+console.log("Data 1 - Koalas Average:", koalasAverage);
+
+console.log("Data Bonus 1 - Dolphins Average:", dolphinsBonus1Average);
+console.log("Data Bonus 1 - Koalas Average:", koalasBonus1Average);
+
+console.log("Data Bonus 2 - Dolphins Average:", dolphinsBonus2Average);
+console.log("Data Bonus 2 - Koalas Average:", koalasBonus2Average);
+
+
+    
+    </script>
+    
+</body>
+</html>
