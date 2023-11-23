@@ -7,25 +7,28 @@
   </head>
   <body>
     <script>
-      // Data
+      
+      //  data
 
-      const DolphinsScore = [110, 85, 90];
-      const KoalasScore = [88, 99, 110];
+      const teamA = [100, 10, 102];
+      const teamB = [99, 100, 101];
+      const AvarageScoreA =
+        teamA.reduce((sum, score) => sum + score, 0) / teamA.length;
+      const AvarageScoreB =
+        teamB.reduce((sum, score) => sum + score, 0) / teamB.length;
+     
+    //  if else conditions 
 
-      // Calcualte Avarage SCores
-      const AvarageScoreDolphin =
-        DolphinsScore.reduce((sum, score) => sum + score, 0) /
-        DolphinsScore.length;
-      const AvarageScoreKoalas =
-        KoalasScore.reduce((sum, score) => sum + score, 0) / KoalasScore.length;
+        if (AvarageScoreA > AvarageScoreB) {
+        console.log("Team A is the winner !!!");
 
-      if (AvarageScoreDolphin > AvarageScoreKoalas) {
-        console.log("Dolphin is winner !!");
-      } else if (AvarageScoreKoalas > AvarageScoreDolphin) {
-        console.log("Koals is Winner !!");
+      } else if (AvarageScoreA < AvarageScoreB) {
+        console.log("Team B is the winner !!!");
+
       } else {
-        console.log("both Are Winner !!");
+        console.log("Both are winners !!");
       }
+      
     </script>
   </body>
 </html>
