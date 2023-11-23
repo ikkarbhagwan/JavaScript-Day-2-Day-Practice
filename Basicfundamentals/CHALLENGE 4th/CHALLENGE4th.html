@@ -7,7 +7,6 @@
   </head>
   <body>
     <script>
-      
       //  data
 
       const teamA = [100, 10, 102];
@@ -16,19 +15,35 @@
         teamA.reduce((sum, score) => sum + score, 0) / teamA.length;
       const AvarageScoreB =
         teamB.reduce((sum, score) => sum + score, 0) / teamB.length;
-     
-    //  if else conditions 
 
-        if (AvarageScoreA > AvarageScoreB) {
+      //  if else conditions
+
+      if (AvarageScoreA > AvarageScoreB) {
         console.log("Team A is the winner !!!");
-
       } else if (AvarageScoreA < AvarageScoreB) {
         console.log("Team B is the winner !!!");
-
       } else {
         console.log("Both are winners !!");
       }
-      
+
+      // next example
+
+      const playerA = (10 + 100 + 20) / 3;
+      const playerB = (10 + 20 + 20) / 3;
+
+      console.log(playerA, playerB );
+      if (playerA  > playerB) {
+        console.log("Team A is the winner !!!");
+
+
+      } else if (playerA < playerB){
+        console.log("Team b is the winner !!!");
+
+
+      }else if (playerA === playerB) {
+        console.log("Team No is the winner !!!");
+
+      }
     </script>
   </body>
 </html>
