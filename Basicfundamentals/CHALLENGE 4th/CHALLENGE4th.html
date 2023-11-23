@@ -26,23 +26,22 @@
         console.log("Both are winners !!");
       }
 
-      // next example
+      // Same next example
 
-      const playerA = (10 + 100 + 20) / 3;
-      const playerB = (10 + 20 + 20) / 3;
+      const playerA = (10 + 100 + 88) / 3;
+      const playerB = (101 + 20 + 85) / 3;
+            console.log(playerA, playerB);
 
-      console.log(playerA, playerB );
-      if (playerA  > playerB) {
+
+
+      if (playerA > playerB && playerA >= 100) {
         console.log("Team A is the winner !!!");
-
-
-      } else if (playerA < playerB){
+      } else if (playerA < playerB && playerA >= 100) {
         console.log("Team b is the winner !!!");
-
-
-      }else if (playerA === playerB) {
+      } else if (playerA === playerB && playerA >= 100) {
         console.log("Team No is the winner !!!");
-
+      }else{
+        console.log("No one wins the trophy!!");
       }
     </script>
   </body>
