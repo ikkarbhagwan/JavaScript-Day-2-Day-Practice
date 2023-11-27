@@ -1,4 +1,4 @@
-const age = 10;
+const age = 23;
 
 age >= 18 ? console.log("This is wine !") : 'this is water';
 console.log("i like to drink water !");
@@ -13,3 +13,5 @@ if (age>= 18){
     drink2 = "is here ";
 }
 console.log(drink2);
+
+console.log(`I like to drink ${drink2} `);
