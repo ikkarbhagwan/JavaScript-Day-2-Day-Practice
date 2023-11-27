@@ -12,3 +12,5 @@ function fruitProcessor(apples, Oranges) {
 }
 // const appleJuice = fruitProcessor(5,0);
 console.log( fruitProcessor(5,0));
+const appleAndOrange = fruitProcessor(2,4); 
+console.log(appleAndOrange);
