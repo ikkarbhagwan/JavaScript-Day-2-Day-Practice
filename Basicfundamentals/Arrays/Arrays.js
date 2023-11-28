@@ -17,7 +17,6 @@ console.log(friends);
 
 friends = ['bob','alice'];
 
-
 const firstName = 'Ponas';
 const jons = ['jonas', 'shjarma', 2012- 1999 ,'tecaher',friends];
 
