@@ -49,3 +49,10 @@ const combined = numbers1.concat(numbers2);
 const numbers = [1, 2, 3, 4, 5];
 const sliced = numbers.slice(1, 4);
 // Result: sliced = [2, 3, 4], numbers = [1, 2, 3, 4, 5]
+
+
+
+// reduce
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+// Result: sum = 15, numbers = [1, 2, 3, 4, 5]
