@@ -58,3 +58,28 @@ let w = 5;
 let w2 = -a;
 console.log(b);
 console.log(++a);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// ?reverse a string 
+function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+  
+  // Example
+  console.log(reverseString("hello")); // Output: "olleh"
+  
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+
+//   Check for Palindrome 
+
+function isPalindrome(str) {
+    const reversed = str.split('').reverse().join('');
+    return str === reversed;
+  }
+  
+  // Example
+  console.log(isPalindrome("racecar")); // Output: true
+  
