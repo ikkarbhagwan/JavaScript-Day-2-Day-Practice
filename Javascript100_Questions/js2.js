@@ -67,3 +67,23 @@ for(let i =1; i<=100; i++){
         console.log("Baaba");
     }
 }
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    // Challenge 3: Find the Factorial
+
+    function Factorial (){
+
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    // Remove Duplicates from an Array 
+
+    function removeDuplicates(arr) {
+        return [...new Set(arr)];
+      }
+      
+      // Example
+      console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+      

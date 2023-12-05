@@ -83,3 +83,22 @@ function isPalindrome(str) {
   // Example
   console.log(isPalindrome("racecar")); // Output: true
   
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    // Challenge 3: Find the Factorial
+
+    function Factorial (){
+
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    // Remove Duplicates from an Array 
+
+    function RemoveDuplicates (){
+        return [...new set(arr)];
+
+    }
+    console.log(RemoveDuplicates([1,1,2,3,3,4,5,6,7]));
