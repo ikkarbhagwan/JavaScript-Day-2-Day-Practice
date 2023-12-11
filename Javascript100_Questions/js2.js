@@ -120,11 +120,50 @@ x();
 
 // 2
 
-function init(){
+function init() {
     var name = "sudha";
-    function displayName(){
+    function displayName() {
         console.log(init);
     }
     displayName();
 }
 init();
+
+// Scoping with let and const
+
+if (Math.random() > 0.5) {
+    var x = 1;
+} else {
+    var x = 2;
+
+}
+console.log(x);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+if (Math.random() > 0.5) {
+    const x = 2;
+} else {
+    const x = 4;
+
+
+}
+console.log(x);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+function makefun(){
+    const name = "Bhagwan";
+
+    function displayGame(){
+        console.log(name);
+
+    }
+    return displayGame();
+}
+
+const myfun = makefun();
+myfun();
