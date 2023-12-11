@@ -61,7 +61,7 @@ for (let i = 1; i <= 100; i++) {
 
     if (i % 5 === 0 && i % 3 === 0) {
         console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
+    } else if (i % 3 === 0) { 
         console.log("Yahoo");
     } else if (i % 3 === 0) {
         console.log("Baaba");
@@ -72,6 +72,7 @@ for (let i = 1; i <= 100; i++) {
 // Challenge 3: Find the Factorial
 
 function Factorial() {
+
 
 }
 
@@ -147,7 +148,7 @@ if (Math.random() > 0.5) {
     const x = 2;
 } else {
     const x = 4;
-s
+    s
 
 }
 console.log(x);
@@ -157,10 +158,10 @@ console.log(x);
 
 // closures in js 
 
-function makefun(){
+function makefun() {
     const name = "Bhagwan";
 
-    function displayGame(){
+    function displayGame() {
         console.log(name);
 
     }
@@ -174,13 +175,17 @@ myfun();
 
 // Array Destruction 
 
-let book = ["Adavnce Js", 200, 150];
+let book = ["Adavnce Js", 200, 150, [2023, "ikkar"]];
 
 // let name = book[1];
 // let price = book[1];
 // let pages = book[2]; 
 
-let [name,price,pages] = book;
+let [name, price = 150, pages,[year, surname]] = book;
+console.log(year);
 
+/////////////////////////////////////////////////////////////////////
 
-console.log(book);
+// Modules
+
+ 
