@@ -147,13 +147,15 @@ if (Math.random() > 0.5) {
     const x = 2;
 } else {
     const x = 4;
-
+s
 
 }
 console.log(x);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+// closures in js 
 
 function makefun(){
     const name = "Bhagwan";
