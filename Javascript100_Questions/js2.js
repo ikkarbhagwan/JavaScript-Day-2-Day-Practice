@@ -9,10 +9,10 @@ console.log(ResverseString("hello"));
 
 // // Resverse a string 
 
-function ResverseString(str){
+function ResverseString(str) {
     return str.split('').reverse().join();
 
-} 
+}
 console.log(ResverseString("Hello"));
 
 // fizzBuzz
@@ -56,50 +56,75 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-for(let i =1; i<=100; i++){
+for (let i = 1; i <= 100; i++) {
 
 
-    if(i % 5 ===0 && i % 3 === 0){
+    if (i % 5 === 0 && i % 3 === 0) {
         console.log("FizzBuzz");
-    }else if(i %3 ===0){
+    } else if (i % 3 === 0) {
         console.log("Yahoo");
-    }else if(i %3 ===0){
+    } else if (i % 3 === 0) {
         console.log("Baaba");
     }
 }
-    ////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
-    // Challenge 3: Find the Factorial
+// Challenge 3: Find the Factorial
 
-    function Factorial (){
+function Factorial() {
 
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// Remove Duplicates from an Array 
+
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+
+// Example
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// new challnges \
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
     }
+}
 
+////////////////////////////////////////////////////////////////////////////////////////////
 
-    ////////////////////////////////////////////////////////////////////////////////////////////
+// Closures in Js
 
-    // Remove Duplicates from an Array 
-
-    function removeDuplicates(arr) {
-        return [...new Set(arr)];
-      }
-      
-      // Example
-      console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
-      
-
-    ////////////////////////////////////////////////////////////////////////////////////////////
-
-    // new challnges \
-  
-    for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        } else if (i % 3 === 0) {
-            console.log("Fizz");
-        } else if (i % 5 === 0) {
-            console.log("Buzz");
-        } else {
-            console.log(i);
-        }
+function x() {
+    var a = 7;
+    function Y() {
+        console.log(a);
     }
+    Y();
+
+}
+x();
+
+// 2
+
+function init(){
+    var name = "sudha";
+    function displayName(){
+        console.log(init);
+    }
+    displayName();
+}
+init();
