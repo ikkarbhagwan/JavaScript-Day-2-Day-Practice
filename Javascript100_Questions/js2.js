@@ -169,3 +169,18 @@ function makefun(){
 
 const myfun = makefun();
 myfun();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Array Destruction 
+
+let book = ["Adavnce Js", 200, 150];
+
+// let name = book[1];
+// let price = book[1];
+// let pages = book[2]; 
+
+let [name,price,pages] = book;
+
+
+console.log(book);
