@@ -16,6 +16,8 @@ const calCampAmplitude = function (temps) {
         if(typeof curTemp !== 'Number') continue;
     }
     console.log(max, min);
+    return max - min;
 
 };
-calCampAmplitude(tempratures);
+const amplitude = calCampAmplitude(tempratures);
+console.log(amplitude);
