@@ -22,6 +22,24 @@ console.log(main, secondary);
 console.log(main,secondary);
 
 
+//receive two return values froma s function
+
 const [starter, mainCourse] = restaurant.order(2,0);
 console.log(starter, mainCourse)
+
+
+//What happened when we have nested array
+//nested Destructuring 
+const nested = [1,[3,4]];
+
+const [i ,[j, k]] = nested;
+console.log(i,j,k);
+
+
+//default value 
+
+[8,9]
+
+const [a, b] = [8, 9];
+console.log(a,b);
 
