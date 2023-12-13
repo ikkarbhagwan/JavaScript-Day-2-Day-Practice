@@ -2,7 +2,7 @@ friends = ["Me", " you", "i"];
 console.log(friends.length);
 
 
-const friendss = new Array ('ikkar ', 'me', 'youi');
+const friendss = new Array ('ikkar ', 'me', 'you');
 friendss[0]='meme';
 console.log(friendss);
 
