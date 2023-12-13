@@ -32,3 +32,13 @@ const myLuckyNumbers = [1,2,3,4,5,6,7,8];
 for(let num of myLuckyNumbers){
     document.write("my Numbers "+  num + "<br>");
 }
+
+
+// 2nd example of for in loop \\
+
+const object = { a: 12, b :13, c: 14};
+
+for(let kye in object){
+    document.write(`the kye values are ${kye}` + "<br>");
+
+}
