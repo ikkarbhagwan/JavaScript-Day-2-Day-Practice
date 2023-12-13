@@ -40,7 +40,6 @@ const game = {
 };
 
 
-
 // 1
 
 const [players1, players2] = game.players;
