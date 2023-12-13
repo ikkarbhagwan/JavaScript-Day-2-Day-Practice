@@ -22,7 +22,14 @@ console.log(orderSet);
 console.log(new Set('momo'));
 orderSet.add('poli');
 orderSet.delete('poli');
+orderSet.clear();
 console.log(orderSet);
+
+
+const staff = ['waiter', 'cook','chef', 'manager', 'chef', 'waiter'];
+const staffUnique = new Set(staff);
+
+console.log(staffUnique);
 
 //we can add , delete or manupulate the values using set
 
