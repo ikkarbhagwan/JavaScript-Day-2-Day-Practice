@@ -24,3 +24,18 @@ const updateMyVehicle ={
 const myUpdateVehicles ={...myVehicle,...updateMyVehicle};
 
 console.log(myUpdateVehicles);
+
+// Udemy examples 
+
+const arr = [7,8,9];
+
+// const newArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(newArr);
+
+const UseSpread = [12,1, ...arr];
+console.log(UseSpread);
+
+//more examples 
+
+const newMenu =[...UseSpread, 'myNAME'];
+console.log(newMenu)
