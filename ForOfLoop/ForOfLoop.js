@@ -25,4 +25,10 @@ for (var kye in main) {
     document.write(kye + "  " + ":" + main[kye] + "<br>");
 }
 
+// for of loop 
 
+const myLuckyNumbers = [1,2,3,4,5,6,7,8];
+
+for(let num of myLuckyNumbers){
+    document.write("my Numbers "+  num + "<br>");
+}
