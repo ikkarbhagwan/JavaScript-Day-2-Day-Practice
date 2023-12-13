@@ -38,4 +38,14 @@ console.log(UseSpread);
 //more examples 
 
 const newMenu =[...UseSpread, 'myNAME'];
-console.log(newMenu)
+console.log(newMenu);
+
+//iterables : Arrays ,strings ,Maps 
+
+const str = 'johans';
+const letter =[...str, 'j'];
+console.log(letter);
+console.log(...str);
+
+
+
