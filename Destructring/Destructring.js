@@ -22,7 +22,7 @@ console.log(main, secondary);
 console.log(main,secondary);
 
 
-//receive two return values froma s function
+//receive two return values from  a function
 
 const [starter, mainCourse] = restaurant.order(2,0);
 console.log(starter, mainCourse)
@@ -38,8 +38,9 @@ console.log(i,j,k);
 
 //default value 
 
-[8,9]
-
+ 
+[8,9]  //this is the problem 
+ 
 const [a, b] = [8, 9];
 console.log(a,b);
 
