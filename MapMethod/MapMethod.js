@@ -23,3 +23,7 @@ const answer = Number(prompt('Your answer'));
 console.log(answer);
 
 console.log(Question.get(Question.get('correct') === answer));
+
+// convert map to Array 
+
+console.log([...Question]);
