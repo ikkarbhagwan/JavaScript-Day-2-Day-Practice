@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+// To uppertcase || to Lowercase practice 
+
+const myWindowSeat = ' You can get this!!';
+const getpopcorn = 'You can get !!';
+
+document.write(myWindowSeat);
+console.log(myWindowSeat.toUpperCase());
+console.log(myWindowSeat.toLowerCase());
+console.log(myWindowSeat +" "+ getpopcorn);
+
+
+const movie = myWindowSeat[0].toUpperCase() +
+ " " + myWindowSeat.slice();
+console.log(movie);
+
+// comparing Emails 
+
+const Email = 'ikkarbhagwan@gmail.com';
+const loginEmail = 'ikkarbhagwan@gmail.com';
+
+const lowerEMail = Email.toUpperCase();
+const trimmedEmail = loginEmail.toUpperCase();
+
+console.log(lowerEMail, trimmedEmail);
+console.log(Email === loginEmail);
+
+//  new replace 
+const priceGB = '288,98@';
+const priceUS = priceGB.replace('@', '$');
+console.log(priceUS);
+
+
+// Announcement With replace ( string method)
+const announcement = "All passengers should come to gate no.2 ";
+console.log(announcement.replace('gate', 'Door'));
+
+
+// Booleans use in strings 
+
+const plane = 'A23xpo'; 
+console.log(plane.includes('A23xpo'));
+console.log(plane.startsWith('A'));
+
+if(plane.startsWith('A') && plane.endsWith('o'));
+console.log("Your are Right ");
+
+
+
+
+    </script>
+</body>
+</html>
