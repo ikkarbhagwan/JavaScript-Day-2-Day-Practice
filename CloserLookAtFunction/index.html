@@ -62,16 +62,28 @@
 
     // 2
 
-    let newArr = [1,2,3,4,5];   
+    let newArr = [1,2,3,4,5];    // This is a callback function also 
 
     newArr.forEach(function(newArr){
         console.log(newArr);
 
     })
 
-    // This is a callback function also 
+
+    // print the square of this number 
+    let squareOfNum = [2,4,6,8,10];
+
+    squareOfNum.forEach((num)=> {
+        console.log(num * num);
+    });
+
+
+
+    let square =[5,4,7,8,9,2];
     
-    
+    square.forEach((val) => {
+        console.log(val**2);
+    })
 
     </script>
   </body>
