@@ -85,6 +85,32 @@
         console.log(val**2);
     })
 
+
+    ////////////////////////////////////////////////////////////////////////////////
+
+    const flight = 'LH123';
+    const jonas = {
+      name : "Bhagwan Ikkar",
+      passport :1234568764,
+    };
+
+    const checkIn = function(flightNum, passenger){
+      flightNum = 'Lh999';
+      passenger.name ='Mr.' + passenger.name;
+      
+
+      if(passenger.passport === 1234568764 ){
+        alert("Cheaked In...")
+      }else{
+        alert("Wrong passport");
+
+      }
+      
+    };
+    checkIn(flight,jonas);
+    console.log(flight);
+    console.log(jonas);
+
     </script>
   </body>
 </html>
