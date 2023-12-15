@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+let name = {
+    firstName : "Akshay",
+    lastName : "saini",
+    printFullName : function (){
+        console.log(this.firstName + " " + this.lastName);
+
+    }
+}
+name.printFullName();
+
+let name2 = {
+    firstName : "Jethha",
+    lastName : "babtaa",
+
+}
+
+name.printFullName.call(name2);
+
+
+// 2
+
+
+let method = 'x';
+function say(title= 'Mr'){
+    return title + ' '+ this.method;
+
+
+}
+
+const person = {
+    name:'bhaguuuu',
+    age : 23,
+}
+
+const tata = method.bind(person);
+console.log(tata);
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
