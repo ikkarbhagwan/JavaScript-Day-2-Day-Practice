@@ -29,4 +29,33 @@ const isOuterFunction = (a) => {
 
 }
 
-isOuterFunction(10);
+    isOuterFunction(10);
+
+// 3
+
+const outer = (x) => {
+    let y = 3;
+
+    const inner = () => {
+        let sum = x + y;
+        console.log(` the sum of x and Y ${sum}`);
+
+    }
+
+    inner();
+}
+outer(10);
+
+//////////////////////////////////////////////////////////
+
+// Higher Order Functions 
+
+function createMultiplier(x) {
+    return function(factor) {
+        return x * factor;
+    };
+}
+
+const double = createMultiplier(2);
+const result = double(6);
+console.log(result); // Output: 12
