@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+const aeroplane = {
+    airline : 'Luftanza',
+    iatacode : 'Lh20',
+    bookings : [],
+    book(flightnum , name){
+        console.log(`${name} booked a seat on ${this.airline} flight ${this.iatacode} ${flightnum}`);
+    }
+
+    
+}
+
+aeroplane.book(233, 'ikkar');
+aeroplane.book(251, 'kadam');
+
+
+
+    </script>
+</body>
+</html>
