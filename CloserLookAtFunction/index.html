@@ -29,6 +29,50 @@
       // Example usage:
       const result = countVowels("hey Prasad");
       console.log(result); // Output: 2 (because there are two 'e's in "hello")
+
+      //   same work with arrow functions
+
+      const countVow = (str) => {
+        let count = 0;
+        for (const char of str) {
+          if (
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u"
+          ) {
+            count ++;
+
+          }
+        }
+        return count;
+      };
+
+      ///////////////////////////////////////////
+
+    //   using for each 
+
+    let arr = ["pune", "delhi"];
+
+    arr.forEach((val) => {
+        console.log(val.toUpperCase());
+
+    });
+
+    // 2
+
+    let newArr = [1,2,3,4,5];   
+
+    newArr.forEach(function(newArr){
+        console.log(newArr);
+
+    })
+
+    // This is a callback function also 
+    
+    
+
     </script>
   </body>
 </html>
