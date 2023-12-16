@@ -7,15 +7,32 @@
   </head>
   <body>
     <script>
-      setTimeout(
+      const ingredients = ["oliovs", "spinch"];
+      const pizzatimer = setTimeout(
         (ing1, ing2) => {
           console.log(`Here is your pizza with ${ing1} and ${ing2}`);
         },
-        3000,
-        " Oninion",
-        "Red chili"
+        3000, ...ingredients
       );
       console.log("waiting...");
+
+      if (ingredients.includes("oliovs")) clearTimeout(pizzatimer);
+
+    //   SetTimeout function 
+
+    setInterval(function(){
+        const currentDate = new Date();
+         console.log(currentDate);
+    }
+    ,2000);
+
+
+
+
+
+
+
+
     </script>
   </body>
 </html>
