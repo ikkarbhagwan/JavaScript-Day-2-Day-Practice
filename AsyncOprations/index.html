@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
-
-
-
-
       //  asyncronus oprations in javascript
       console.log("before setTimeout ..");
 
@@ -21,30 +15,47 @@
       }, 3000);
       console.log("inside SetTimeOut ..");
 
-    //   Promise creation 
+      //   Promise creation
 
-    const myPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        const randomNumber = Math.floor(Math.random() * 10);
-        if (randomNumber < 5) {
+      const myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          const randomNumber = Math.floor(Math.random() * 10);
+          if (randomNumber < 5) {
             resolve(`Success!! Random number: ${randomNumber}`);
-        } else {
+          } else {
             reject(`Error!! The random number: ${randomNumber}`);
+          }
+        }, 1000);
+      });
+
+      // Using the Promise
+      myPromise
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+
+      // 2
+
+      const hisPromise = new Promise((resolve, reject) => {
+        const createRandome = Math.floor(math.random() * 10);
+
+        if (randomNumber > 5) {
+          resolve(`Success!! Random number : ${createRandome}`);
+        } else {
+          reject(`Error !! Random Number : ${createRandome}`);
         }
-    }, 1000);
-});
+      });
 
-// Using the Promise
-myPromise
-    .then(result => {
-        console.log(result);
-    })
-    .catch(error => {
-        console.error(error);
-    });
-
-
-
+      hisPromise
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     </script>
-</body>
+  </body>
 </html>
