@@ -1,85 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<script>
+  </head>
+  <body>
+    <script>
+      const fruits = ["apple", "banana", "Oranges"];
+      fruits.push("papita");
+      console.log(fruits);
+      // pop
 
-const fruits = ["apple", "banana", "Oranges"];
-fruits.push("papita");
-console.log(fruits);
-// pop 
+      let bag = ["Pen", "keys", "mobiles", "earphones"];
+      let bag2 = bag.pop();
+      console.log(bag2);
 
-let bag = ["Pen","keys","mobiles","earphones"];
-let bag2 =bag.pop();
-console.log(bag2);
+      // shift method
 
+      let sack = ["Pen", "keys", "mobiles", "earphones"];
+      let sack2 = sack.shift();
+      console.log(sack2);
 
-// shift method 
+      // Unshift method
+      let Pics = ["banana", "orange"];
+      Pics.unshift("apple");
+      console.log(Pics);
+      // Result: ['apple', 'banana', 'orange']
 
-let sack = ["Pen","keys","mobiles","earphones"];
-let sack2 =sack.shift();
-console.log(sack2);
+      // indexOf() method
 
+      let Eat = ["apple", "banana", "orange"];
+      let Eat2 = Eat.indexOf("orange");
+      console.log(Eat2);
+      // Result: index = 1
 
-// Unshift method 
-let Pics = ['banana', 'orange'];
-Pics.unshift('apple');
-console.log(Pics);
-// Result: ['apple', 'banana', 'orange']
+      // slice() method
 
-// indexOf() method 
+      let fruits2 = ["apple", "banana", "orange", "grape"];
+      let slicedFruits = fruits2.slice(1, 3);
+      console.log(slicedFruits);
+      // Result: slicedFruits = ['banana', 'orange']
 
-let Eat = ['apple', 'banana', 'orange'];
-let Eat2 = Eat.indexOf('orange');
-console.log(Eat2);
-// Result: index = 1
+      ////////////////////////////////////////////////////////////////////////////////////
 
-// slice() method 
+      let myName = ["bhagwan", "santosh", "govind", "hanuman"];
 
-let fruits2 = ['apple', 'banana', 'orange', 'grape'];
-let slicedFruits = fruits2.slice(1, 3);
-console.log(slicedFruits);
-// Result: slicedFruits = ['banana', 'orange']
+      let updateMyname = myName.slice(1, 3);
+      // let updateMyname = myName.slice();
 
+      console.log(updateMyname);
+      ////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////
+      // reverse
 
-let myName = ['bhagwan', 'santosh', 'govind', 'hanuman'];
+      arr = [1, 2, 3, 4, 5, 6];
 
-let updateMyname = myName.slice(1, 3);
-// let updateMyname = myName.slice();
+      console.log(arr.reverse());
 
+      ////////////////////////////////////////////////////
 
-console.log(updateMyname);
-////////////////////////////
+      // join
 
+      let joinArray = [1, 2, 5, 5, 5, 5];
+      let array2 = joinArray.join("+");
+      console.log(array2);
 
-// reverse 
+      // find
+      let numbers = [1, 2, 3, 4, 5];
 
-arr = [1,2,3,4,5,6];
+      let result1 = numbers.find(function (element) {
+        return element > 3;
+      });
 
-console.log(arr.reverse())
+      console.log(result1);
 
+      // chaining the method
 
-////////////////////////////////////////////////////
+      let myArray = [1, 2, 3, 4, 5];
 
-// join 
+      let result = myArray
+        .filter((num) => num > 3)
+        .map((num) => num * 2)
+        .reduce((acc, num) => acc + num, 0);
+      console.log(result);
 
-let joinArray = [1,2,5,5,5,5,];
-let array2 = joinArray.join('+');
-console.log(array2);
+      //  asyncronus oprations in javascript
+      console.log("before setTimeout ..");
 
-
-// map ()
-
-
-
-</script>
- <script src="ArrayMethods.js"></script>
-    
-</body>
+      setTimeout(() => {
+        console.log("Middle setTimeOut..");
+      }, 3000);
+      console.log("inside SetTimeOut ..");
+    </script>
+    <script src="ArrayMethods.js"></script>
+  </body>
 </html>

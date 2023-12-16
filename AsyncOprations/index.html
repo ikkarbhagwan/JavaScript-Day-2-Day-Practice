@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+
+
+      //  asyncronus oprations in javascript
+      console.log("before setTimeout ..");
+
+      setTimeout(() => {
+        console.log("Middle setTimeOut..");
+      }, 3000);
+      console.log("inside SetTimeOut ..");
+
+    //   Promise creation 
+
+    const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const randomNumber = Math.floor(Math.random() * 10);
+        if (randomNumber < 5) {
+            resolve(`Success!! Random number: ${randomNumber}`);
+        } else {
+            reject(`Error!! The random number: ${randomNumber}`);
+        }
+    }, 1000);
+});
+
+// Using the Promise
+myPromise
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
+
+    </script>
+</body>
+</html>
