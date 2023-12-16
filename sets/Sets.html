@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <script>
+      const orderSet = new Set([
+        "pizza",
+        "pizza",
+        "pasta",
+        "panipuri",
+        "panipuri",
+      ]);
 
-const orderSet = new Set([
-    'pizza',
-    'pizza',
-    'pasta',  
-    'panipuri',
-    'panipuri',
-]);
+      console.log(orderSet);
+      console.log(new Set("momo"));
+      orderSet.add("poli");
+      orderSet.delete("poli");
+      orderSet.clear();
+      console.log(orderSet);
 
-console.log(orderSet);
-console.log(new Set('momo'));
-orderSet.add('poli');
-orderSet.delete('poli');
-orderSet.clear();
-console.log(orderSet);
+      const staff = ["waiter", "cook", "chef", "manager", "chef", "waiter"];
+      const staffUnique = new Set(staff);
 
+      console.log(staffUnique);
 
-const staff = ['waiter', 'cook','chef', 'manager', 'chef', 'waiter'];
-const staffUnique = new Set(staff);
+      //we can add , delete or manupulate the values using set
 
-console.log(staffUnique);
+      const duplicates = [1, 2, 3, 4, 4, 5, 5, 6];
 
-//we can add , delete or manupulate the values using set
+      console.log(new Set(duplicates));
 
-const duplicates = [1,2,3,4,4,5,5,6];
-
-console.log(new Set(duplicates));
-
-
-
+  
     </script>
-    
-</body>
+  </body>
 </html>
