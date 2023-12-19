@@ -20,3 +20,25 @@ const jack = new Person('jack', 2016);
 console.log(matilda, jack);
 
 console.log(jonas instanceof Person);
+
+// 2. creating new object using constructor function 
+
+function Women(first,last){
+    this.firstName = "first",
+    this.lastName = "last"
+
+}
+
+const women1 = new Women("Elon", "Musk");
+const women2 = new Women("Bill", "Gates"); // we created another object with women consatructor 
+
+//adding properties to objects 
+
+women1.age =20;
+console.log(women1);
+
+
+women2.price = 45;
+console.log(women2.price);
+
+
