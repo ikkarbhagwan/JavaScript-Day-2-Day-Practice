@@ -20,13 +20,14 @@ let employee = Object.create(person);
 //now it will create an empty object and passes two methods in it [callAge,PersonInit]
 employee.employeeInit = function(name,BirthYear,gender,empid,salary){
   
-    employee.employeeInit();
+    employee.personInit.call(this,name,birthYear,gender);
     this.empid = empid;
     this.salary =salary;
 
     }
+    console.log(employee);
 
     let mark = Object.create(employee);
-    mark.employeeInit();
-    
+    mark.employeeInit('mark',1999,'male',301,45000);
+
     console.log(mark);
