@@ -17,3 +17,15 @@ for (let i = 11; i <= 30; i + 2) {
 }
 
 console.log(sum);
+
+// 2.
+
+let oddEven = 0;
+
+for(let i = 11; i<30; i+2){
+    sum+=i;
+
+}
+
+
+console.log(oddEven);
