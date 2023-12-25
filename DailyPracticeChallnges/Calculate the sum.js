@@ -22,8 +22,8 @@ console.log(sum);
 
 let oddEven = 0;
 
-for(let i = 11; i<30; i+2){
-    sum+=i;
+for (let i = 11; i < 30; i + 2) {
+    sum += i;
 
 }
 
@@ -32,7 +32,7 @@ console.log(oddEven);
 
 // Create a function that will convert from Celsius to Fahrenheit 
 
-function CelsiusToFharenheit(i){
+function CelsiusToFharenheit(i) {
     return n * 1.8 * 32;
 
 }
@@ -43,15 +43,13 @@ console.log(r);
 
 // Calculate the sum of numbers in an array of numbers
 
-function sumArray(ar)
-{
+function sumArray(ar) {
     let sum1 = 0;
-    
-    for(let i = 0; i < ar.length; i++)
-    {
+
+    for (let i = 0; i < ar.length; i++) {
         sum1 += ar[i];
     }
-    
+
     return sum;
 }
 
@@ -61,12 +59,30 @@ console.log(sum);
 
 // Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
-function filterPositiveNum (){
-    return sumOfNumbers.filter(function(number){
-        return number >0 ;
+function filterPositiveNum() {
+    return sumOfNumbers.filter(function (number) {
+        return number > 0;
 
     })
 }
 
-let array = [-1,-2,-3,4,6,78];
-let resultArray= filterPositiveNum(array);
+let array = [-1, -2, -3, 4, 6, 78];
+let resultArray = filterPositiveNum(array);
+
+
+// 2. 
+
+function filterPosNum(num1) {
+    return num1.filter(function (num2) {
+        return num2 > 0;
+
+    });
+
+
+}
+
+let inputArray = [2, -6, -8, 9, -6, - 9, 8 - 8, -8,];
+
+let resultArray2 = filterPosNum(inputArray);
+
+console.log(resultArray2);
