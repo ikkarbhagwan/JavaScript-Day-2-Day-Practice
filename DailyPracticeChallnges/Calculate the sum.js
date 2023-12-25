@@ -117,3 +117,12 @@ let q = [5, 4, 6.5, 8, 9, 6];
 q.reverse();
 console.log(q);
 
+// Reverse a string 
+
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+let originalString = "Hello, World!";
+let reversedString = reverseString(originalString);
+console.log(reversedString);
