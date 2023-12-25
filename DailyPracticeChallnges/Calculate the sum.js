@@ -58,3 +58,15 @@ function sumArray(ar)
 let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
 let sum1 = sumArray(ar);
 console.log(sum);
+
+// Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+function filterPositiveNum (){
+    return sumOfNumbers.filter(function(number){
+        return number >0 ;
+
+    })
+}
+
+let array = [-1,-2,-3,4,6,78];
+let resultArray= filterPositiveNum(array);
