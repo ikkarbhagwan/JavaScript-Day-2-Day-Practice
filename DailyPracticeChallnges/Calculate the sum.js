@@ -86,3 +86,34 @@ let inputArray = [2, -6, -8, 9, -6, - 9, 8 - 8, -8,];
 let resultArray2 = filterPosNum(inputArray);
 
 console.log(resultArray2);
+
+// Coding challenge : Find the maximum number in an array of numbers
+
+function findMaxNum(give){
+
+    let max = [0];
+
+    for(let i = 0; i <give.length; i ++)
+    {
+        if(i = 0; )
+    }
+}
+
+
+// Coding challenge: Rotate an array to the right 1 position
+
+let myArray = [1,2,3,4];
+
+function myArray(){
+    let last = myArray.push();
+    myArray.unshift(last);
+
+}
+
+// Revesr an Array 
+
+
+let q = [5, 4, 6.5, 8, 9, 6];
+q.reverse();
+console.log(q);
+
