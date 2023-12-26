@@ -126,3 +126,11 @@ function reverseString(str) {
 let originalString = "Hello, World!";
 let reversedString = reverseString(originalString);
 console.log(reversedString);
+
+
+// Find the Maximum Number 
+
+function findMax(numbers){
+
+}
+console.log(findMax([1,2,3,4,5,6]));
