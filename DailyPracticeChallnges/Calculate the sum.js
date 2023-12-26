@@ -1,4 +1,4 @@
-// Coding challenge #5: Calculate the sum of numbers from 1 to 10
+ Calculate the sum of numbers from 1 to 10
 
 let sumOfNumbers = 0;
 
@@ -8,7 +8,7 @@ for (let i = 0; i <= 10; i++) {
 
 console.log(sumOfNumbers);
 
-// Coding challenge #6:  Calculate the sum of odd numbers greater than 10 and less than 30
+// /Calculate the sum of odd numbers greater than 10 and less than 30
 
 let sum = 0;
 
@@ -131,6 +131,28 @@ console.log(reversedString);
 // Find the Maximum Number 
 
 function findMax(numbers){
+    return Math.max(...numbers);
 
 }
 console.log(findMax([1,2,3,4,5,6]));
+
+
+////////////////////////////////////////////////
+const age = 10;
+
+if (age >= 18) {
+  console.log(`sarah is ready to get license..`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Srrah is too young try after ${yearsLeft} years!`);
+}
+
+// 2nd Century example
+const birthYear = 2021;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 22;
+}
+console.log(century);
