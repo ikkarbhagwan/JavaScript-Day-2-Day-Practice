@@ -165,3 +165,11 @@ for (i = 1; i < 100; 1+2) {
 
     console.log(i);
 }
+
+
+// Print the multiplication table with 7 
+
+for(i=1; i<=10; i++){
+    let row = 7*i;
+    console.log(row);
+}
