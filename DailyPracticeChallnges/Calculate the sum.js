@@ -89,22 +89,21 @@ console.log(resultArray2);
 
 // Coding challenge : Find the maximum number in an array of numbers
 
-function findMaxNum(give){
+function findMaxNum(give) {
 
     let max = [0];
 
-    for(let i = 0; i <give.length; i ++)
-    {
-        if(i = 0; )
+    for (let i = 0; i < give.length; i++) {
+        if (i = 0; )
     }
 }
 
 
 // Coding challenge: Rotate an array to the right 1 position
 
-let myArray = [1,2,3,4];
+let myArray = [1, 2, 3, 4];
 
-function myArray(){
+function myArray() {
     let last = myArray.push();
     myArray.unshift(last);
 
@@ -130,29 +129,39 @@ console.log(reversedString);
 
 // Find the Maximum Number 
 
-function findMax(numbers){
+function findMax(numbers) {
     return Math.max(...numbers);
 
 }
-console.log(findMax([1,2,3,4,5,6]));
+console.log(findMax([1, 2, 3, 4, 5, 6]));
 
 
 ////////////////////////////////////////////////
+
+
 const age = 10;
 
 if (age >= 18) {
-  console.log(`sarah is ready to get license..`);
+    console.log(`sarah is ready to get license..`);
 } else {
-  const yearsLeft = 18 - age;
-  console.log(`Srrah is too young try after ${yearsLeft} years!`);
+    const yearsLeft = 18 - age;
+    console.log(`Srrah is too young try after ${yearsLeft} years!`);
 }
 
 // 2nd Century example
 const birthYear = 2021;
 let century;
 if (birthYear <= 2000) {
-  century = 20;
+    century = 20;
 } else {
-  century = 22;
+    century = 22;
 }
 console.log(century);
+
+
+// Print the odd numbers less than 100 
+
+for (i = 1; i < 100; 1+2) {
+
+    console.log(i);
+}
