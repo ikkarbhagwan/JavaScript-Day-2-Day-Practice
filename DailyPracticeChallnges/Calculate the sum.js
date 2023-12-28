@@ -173,3 +173,20 @@ for(i=1; i<=10; i++){
     let row = 7*i;
     console.log(row);
 }
+
+
+// Print all the multiplication tables with numbers from 1 to 10 
+
+for(let i=1; i<=10; i++){
+    console.log(i);
+
+}
+
+function printTable(n){
+
+for(let i =1; i <= 10; i++){
+    let row = n*i;
+    console.log(row);
+}
+
+}
