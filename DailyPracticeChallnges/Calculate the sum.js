@@ -195,11 +195,24 @@ for(let i =1; i <= 10; i++){
 
 // Calculate the sum of numbers from 1 to 10 
 
-let sum6 = 0;
+let sumNum = 0;
 
 for(let i =1; i <= 10; i++){
     sum6+=i;
 
 }
 
-console.log(sum6);
+console.log(sumNum);
+
+
+//Calculate the sum of odd numbers greater than 10 and less than 30
+
+
+let sumOdd = 0;
+
+for(let i =1; i <=10; i+=2)
+{
+    sum += 1;
+}
+
+console.log(sumOdd);
