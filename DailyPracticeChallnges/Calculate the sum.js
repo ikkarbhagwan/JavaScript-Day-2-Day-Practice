@@ -216,3 +216,30 @@ for(let i =1; i <=10; i+=2)
 }
 
 console.log(sumOdd);
+
+
+// Palindrome Check: 
+
+function cheakPalindrome(str){
+
+    const reverseStr = str.split('').reverse().join('');
+
+    return str = reverseStr;
+    
+}
+
+console.log(cheakPalindrome("radar"));
+
+
+// Palindrome Check:  
+function isPalindrome(str){
+
+    const isYesPalindrome = str.split('').reverse().join('');
+
+    return str === isPalindrome;
+    
+}
+
+console.log(isPalindrome("radar"));
+console.log(isPalindrome("hello"));
+
