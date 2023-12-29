@@ -224,7 +224,7 @@ function cheakPalindrome(str){
 
     const reverseStr = str.split('').reverse().join('');
 
-    return str = reverseStr;
+    return str === reverseStr;
     
 }
 
@@ -243,3 +243,13 @@ function isPalindrome(str){
 console.log(isPalindrome("radar"));
 console.log(isPalindrome("hello"));
 
+
+// flatten Array challange 
+
+function flattenArray(arr) {
+    return arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
+  }
+  
+  const nestedArray = [1, [2, [3, 4], 5]];
+  console.log(flattenArray(nestedArray)); // [1, 2, 3, 4, 5]
+  
