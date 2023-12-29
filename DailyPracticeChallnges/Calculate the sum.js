@@ -281,3 +281,12 @@ function areAnagrams(str1,str2){
 }
 console.log(areAnagrams("listen", "silent"));
 console.log(areAnagrams("hello", "silent"));
+
+
+// 
+
+let larNum1 = [4,5,8,7,5,5,6];
+
+let getNum = Math.max(...larNum1);
+
+console.log(getNum);
