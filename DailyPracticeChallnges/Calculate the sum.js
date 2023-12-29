@@ -269,3 +269,15 @@ let largeNum = [2, 3, 4, 5, 6, 7, 8, 88];
 let findNum = Math.max(...largeNum)
 console.log(largeNum);
 
+
+
+// Anagram Check: 
+
+function areAnagrams(str1,str2){
+    const sortedStr1 = str1.split('').sort().join('');
+    const sortedStr2 = str2.split('').sort().join('');
+
+    return sortedtStr1 === sortedStr2;
+}
+console.log(areAnagrams("listen", "silent"));
+console.log(areAnagrams("hello", "silent"));
