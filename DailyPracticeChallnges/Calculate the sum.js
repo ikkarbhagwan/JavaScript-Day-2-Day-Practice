@@ -161,7 +161,7 @@ console.log(century);
 
 // Print the odd numbers less than 100 
 
-for (i = 1; i < 100; 1+2) {
+for (i = 1; i < 100; 1 + 2) {
 
     console.log(i);
 }
@@ -169,26 +169,26 @@ for (i = 1; i < 100; 1+2) {
 
 // Print the multiplication table with 7 
 
-for(i=1; i<=10; i++){
-    let row = 7*i;
+for (i = 1; i <= 10; i++) {
+    let row = 7 * i;
     console.log(row);
 }
 
 
 // Print all the multiplication tables with numbers from 1 to 10 
 
-for(let i=1; i<=10; i++){
+for (let i = 1; i <= 10; i++) {
     console.log(i);
 
 }
 
 
-function printTable(n){
+function printTable(n) {
 
-for(let i =1; i <= 10; i++){
-    let row = n*i;
-    console.log(row);
-}
+    for (let i = 1; i <= 10; i++) {
+        let row = n * i;
+        console.log(row);
+    }
 
 };
 
@@ -197,8 +197,8 @@ for(let i =1; i <= 10; i++){
 
 let sumNum = 0;
 
-for(let i =1; i <= 10; i++){
-    sum6+=i;
+for (let i = 1; i <= 10; i++) {
+    sum6 += i;
 
 }
 
@@ -210,8 +210,7 @@ console.log(sumNum);
 
 let sumOdd = 0;
 
-for(let i =1; i <=10; i+=2)
-{
+for (let i = 1; i <= 10; i += 2) {
     sum += 1;
 }
 
@@ -220,24 +219,24 @@ console.log(sumOdd);
 
 // Palindrome Check: 
 
-function cheakPalindrome(str){
+function cheakPalindrome(str) {
 
     const reverseStr = str.split('').reverse().join('');
 
     return str === reverseStr;
-    
+
 }
 
 console.log(cheakPalindrome("radar"));
 
 
 // Palindrome Check:  
-function isPalindrome(str){
+function isPalindrome(str) {
 
     const isYesPalindrome = str.split('').reverse().join('');
 
     return str === isPalindrome;
-    
+
 }
 
 console.log(isPalindrome("radar"));
@@ -248,8 +247,25 @@ console.log(isPalindrome("hello"));
 
 function flattenArray(arr) {
     return arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
-  }
-  
-  const nestedArray = [1, [2, [3, 4], 5]];
-  console.log(flattenArray(nestedArray)); // [1, 2, 3, 4, 5]
-  
+}
+
+const nestedArray = [1, [2, [3, 4], 5]];
+console.log(flattenArray(nestedArray)); // [1, 2, 3, 4, 5]
+
+//   Maximum Element in Array: 
+
+function findMaxElement(arr) {
+    return Math.max(...arr);
+
+}
+
+const numbers = [9, 6, 5, 6, 7, 89, 9, 87, 85, 5, 6];
+
+console.log(findMax(numbers));
+
+// using math.max and spred oprator 
+
+let largeNum = [2, 3, 4, 5, 6, 7, 8, 88];
+let findNum = Math.max(...largeNum)
+console.log(largeNum);
+
