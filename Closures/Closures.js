@@ -107,9 +107,37 @@ myCounter.increment();
 myCounter.increment();
 
 
+// 3nd example of closure
+
+function createCounter(){
+    let sound = 0;
+
+    function base(){
+        sound++;
+        console.log(sound);
+
+    }
+
+    function valume(){
+        sound--;
+        console.log(sound);
+
+    }
+
+    function reset(){
+        sound = 0;
+        console.log(`sound is ${sound} level`);
+    }
+    return {base,valume,reset};
+    
+
+}
 
 
+let system = createCounter();
 
+createCounter.base();
+createCounter.valume();
 
 
 
