@@ -59,3 +59,58 @@ function createMultiplier(x) {
 const double = createMultiplier(2);
 const result = double(6);
 console.log(result); // Output: 12
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// closure example 
+
+const outerFunction = () => {
+
+    let outerVariable = "Im from outer variable";
+
+    function innerfunction(){
+        console.log(outerVariable);
+
+    }
+    return innerfunction;
+}
+
+let closure = outerFunction();
+
+closure();
+
+
+// 2nd example of closure 
+
+function counter(){
+    let count = 0;
+
+    function increment(){
+        count++;
+        console.log(count);
+
+    }
+    function decrement()
+    {
+        count--;
+        console.log(count)
+    }
+
+    return {increment, decrement};
+
+}
+let myCounter = counter();
+
+myCounter.decrement();
+myCounter.increment();
+myCounter.increment();
+
+
+
+
+
+
+
+
+
