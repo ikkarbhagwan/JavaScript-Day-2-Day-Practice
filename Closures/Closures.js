@@ -129,7 +129,7 @@ function createCounter(){
         console.log(`sound is ${sound} level`);
     }
     return {base,valume,reset};
-    
+
 
 }
 
@@ -142,3 +142,28 @@ createCounter.valume();
 
 
 
+
+
+// Real life examples 
+
+function createButton(){
+    let clickCount = 0;
+    
+    
+    function handleClick(){
+        clickCount++;
+        console.log(`Button Clicked ${clickCount} times`);
+        
+
+    }
+
+    const button = document.createElement("button");
+    button.textContent = "click me";
+
+    button.addEventListener("click",handleClick );
+
+    return {button, getClickCount: ()=> clickCount};
+
+}
+
+const myButton = createButton();
