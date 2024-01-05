@@ -392,3 +392,10 @@ console.log(date1); // Updated date with December
 let e = new Date();
 e.setDate(15);
 console.log(e); // Updated date with the 15th day of the month
+
+
+//  Real life example 
+
+let printDate = new Date('feb 12 12');
+
+console.log(printDate.getDate() +"/"+ printDate.getMonth()+ "/" + printDate.getFullYear()+"/")
