@@ -23,7 +23,7 @@ const missingNumber = findMissingNumber([3, 0, 1]);
 console.log(missingNumber);
 
 
-// Check for Palindrome
+// for loop / if else use
 
 for (let i = 0; i <= 100; i++) {
 
@@ -42,3 +42,13 @@ for (let i = 0; i <= 100; i++) {
 
 
 }
+
+// Palindrome Checker:
+
+function isPalindrome(str){
+    const reverseString = str.split(" ").reverse().join("");
+    return str === reverseString;
+
+}
+console.log(isPalindrome("level"));
+
