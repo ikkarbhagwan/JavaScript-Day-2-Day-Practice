@@ -1,4 +1,4 @@
- Calculate the sum of numbers from 1 to 10
+//  Calculate the sum of numbers from 1 to 10
 
 let sumOfNumbers = 0;
 
@@ -283,10 +283,31 @@ console.log(areAnagrams("listen", "silent"));
 console.log(areAnagrams("hello", "silent"));
 
 
-// 
+// using math.max and spred oprator 
 
 let larNum1 = [4,5,8,7,5,5,6];
 
 let getNum = Math.max(...larNum1);
 
 console.log(getNum);
+
+
+// thisPalindrome ////////////////////////////
+
+
+let thisPalindrome ="aca";
+let thisPalindrome1="";
+
+for(let i=thisPalindrome.length-1; i>-1; i-- )
+{
+    thisPalindrome1=thisPalindrome1+thisPalindrome[i]
+    
+}
+console.log(thisPalindrome1)
+
+if(thisPalindrome1===thisPalindrome){
+    console.log("this is plaindroome string")
+}
+else{
+    console.log("this is not plaindroome string")
+}
