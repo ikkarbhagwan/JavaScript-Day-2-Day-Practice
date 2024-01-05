@@ -1,365 +1,379 @@
-//  Calculate the sum of numbers from 1 to 10
+// //  Calculate the sum of numbers from 1 to 10
 
-let sumOfNumbers = 0;
+// let sumOfNumbers = 0;
 
-for (let i = 0; i <= 10; i++) {
-    sumOfNumbers += i;
-}
+// for (let i = 0; i <= 10; i++) {
+//     sumOfNumbers += i;
+// }
 
-console.log(sumOfNumbers);
+// console.log(sumOfNumbers);
 
-// /Calculate the sum of odd numbers greater than 10 and less than 30
+// // /Calculate the sum of odd numbers greater than 10 and less than 30
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 11; i <= 30; i + 2) {
-    sum + i;
-}
+// for (let i = 11; i <= 30; i + 2) {
+//     sum + i;
+// }
 
-console.log(sum);
+// console.log(sum);
 
-// 2.
+// // 2.
 
-let oddEven = 0;
+// let oddEven = 0;
 
-for (let i = 11; i < 30; i + 2) {
-    sum += i;
+// for (let i = 11; i < 30; i + 2) {
+//     sum += i;
 
-}
+// }
 
 
-console.log(oddEven);
+// console.log(oddEven);
 
-// Create a function that will convert from Celsius to Fahrenheit 
+// // Create a function that will convert from Celsius to Fahrenheit 
 
-function CelsiusToFharenheit(i) {
-    return n * 1.8 * 32;
+// function CelsiusToFharenheit(i) {
+//     return n * 1.8 * 32;
 
-}
+// }
 
-let r = CelsiusToFharenheit(i);
+// let r = CelsiusToFharenheit(i);
 
-console.log(r);
+// console.log(r);
 
-// Calculate the sum of numbers in an array of numbers
+// // Calculate the sum of numbers in an array of numbers
 
-function sumArray(ar) {
-    let sum1 = 0;
+// function sumArray(ar) {
+//     let sum1 = 0;
 
-    for (let i = 0; i < ar.length; i++) {
-        sum1 += ar[i];
-    }
+//     for (let i = 0; i < ar.length; i++) {
+//         sum1 += ar[i];
+//     }
 
-    return sum;
-}
+//     return sum;
+// }
 
-let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
-let sum1 = sumArray(ar);
-console.log(sum);
+// let ar = [2, 3, -1, 5, 7, 9, 10, 15, 95];
+// let sum1 = sumArray(ar);
+// console.log(sum);
 
-// Create a function that receives an array of numbers and returns an array containing only the positive numbers
+// // Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
-function filterPositiveNum() {
-    return sumOfNumbers.filter(function (number) {
-        return number > 0;
+// function filterPositiveNum() {
+//     return sumOfNumbers.filter(function (number) {
+//         return number > 0;
 
-    })
-}
+//     })
+// }
 
-let array = [-1, -2, -3, 4, 6, 78];
-let resultArray = filterPositiveNum(array);
+// let array = [-1, -2, -3, 4, 6, 78];
+// let resultArray = filterPositiveNum(array);
 
 
-// 2. 
+// // 2. 
 
-function filterPosNum(num1) {
-    return num1.filter(function (num2) {
-        return num2 > 0;
+// function filterPosNum(num1) {
+//     return num1.filter(function (num2) {
+//         return num2 > 0;
 
-    });
+//     });
 
 
-}
+// }
 
-let inputArray = [2, -6, -8, 9, -6, - 9, 8 - 8, -8,];
+// let inputArray = [2, -6, -8, 9, -6, - 9, 8 - 8, -8,];
 
-let resultArray2 = filterPosNum(inputArray);
+// let resultArray2 = filterPosNum(inputArray);
 
-console.log(resultArray2);
+// console.log(resultArray2);
 
-// Coding challenge : Find the maximum number in an array of numbers
+// // Coding challenge : Find the maximum number in an array of numbers
 
-function findMaxNum(give) {
+// function findMaxNum(give) {
 
-    let max = [0];
+//     let max = [0];
 
-    for (let i = 0; i < give.length; i++) {
-        if (i = 0; )
-    }
-}
+//     for (let i = 0; i < give.length; i++) {
+//         if (i = 0; )
+//     }
+// }
 
 
-// Coding challenge: Rotate an array to the right 1 position
+// // Coding challenge: Rotate an array to the right 1 position
 
-let myArray = [1, 2, 3, 4];
+// let myArray = [1, 2, 3, 4];
 
-function myArray() {
-    let last = myArray.push();
-    myArray.unshift(last);
+// function myArray() {
+//     let last = myArray.push();
+//     myArray.unshift(last);
 
-}
+// }
 
-// Revesr an Array 
+// // Revesr an Array 
 
 
-let q = [5, 4, 6.5, 8, 9, 6];
-q.reverse();
-console.log(q);
+// let q = [5, 4, 6.5, 8, 9, 6];
+// q.reverse();
+// console.log(q);
 
-// Reverse a string 
+// // Reverse a string 
 
-function reverseString(str) {
-    return str.split('').reverse().join('');
-}
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+// }
 
-let originalString = "Hello, World!";
-let reversedString = reverseString(originalString);
-console.log(reversedString);
+// let originalString = "Hello, World!";
+// let reversedString = reverseString(originalString);
+// console.log(reversedString);
 
 
-// Find the Maximum Number 
+// // Find the Maximum Number 
 
-function findMax(numbers) {
-    return Math.max(...numbers);
+// function findMax(numbers) {
+//     return Math.max(...numbers);
 
-}
-console.log(findMax([1, 2, 3, 4, 5, 6]));
+// }
+// console.log(findMax([1, 2, 3, 4, 5, 6]));
 
 
-////////////////////////////////////////////////
+// ////////////////////////////////////////////////
 
 
-const age = 10;
+// const age = 10;
 
-if (age >= 18) {
-    console.log(`sarah is ready to get license..`);
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Srrah is too young try after ${yearsLeft} years!`);
-}
+// if (age >= 18) {
+//     console.log(`sarah is ready to get license..`);
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Srrah is too young try after ${yearsLeft} years!`);
+// }
 
-// 2nd Century example
-const birthYear = 2021;
-let century;
-if (birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 22;
-}
-console.log(century);
+// // 2nd Century example
+// const birthYear = 2021;
+// let century;
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 22;
+// }
+// console.log(century);
 
 
-// Print the odd numbers less than 100 
+// // Print the odd numbers less than 100 
 
-for (i = 1; i < 100; 1 + 2) {
+// for (i = 1; i < 100; 1 + 2) {
 
-    console.log(i);
-}
+//     console.log(i);
+// }
 
 
-// Print the multiplication table with 7 
+// // Print the multiplication table with 7 
 
-for (i = 1; i <= 10; i++) {
-    let row = 7 * i;
-    console.log(row);
-}
+// for (i = 1; i <= 10; i++) {
+//     let row = 7 * i;
+//     console.log(row);
+// }
 
 
-// Print all the multiplication tables with numbers from 1 to 10 
+// // Print all the multiplication tables with numbers from 1 to 10 
 
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
 
-}
+// }
 
 
-function printTable(n) {
+// function printTable(n) {
 
-    for (let i = 1; i <= 10; i++) {
-        let row = n * i;
-        console.log(row);
-    }
+//     for (let i = 1; i <= 10; i++) {
+//         let row = n * i;
+//         console.log(row);
+//     }
 
-};
+// };
 
 
-// Calculate the sum of numbers from 1 to 10 
+// // Calculate the sum of numbers from 1 to 10 
 
-let sumNum = 0;
+// let sumNum = 0;
 
-for (let i = 1; i <= 10; i++) {
-    sum6 += i;
+// for (let i = 1; i <= 10; i++) {
+//     sum6 += i;
 
-}
+// }
 
-console.log(sumNum);
+// console.log(sumNum);
 
 
-//Calculate the sum of odd numbers greater than 10 and less than 30
+// //Calculate the sum of odd numbers greater than 10 and less than 30
 
 
-let sumOdd = 0;
+// let sumOdd = 0;
 
-for (let i = 1; i <= 10; i += 2) {
-    sum += 1;
-}
+// for (let i = 1; i <= 10; i += 2) {
+//     sum += 1;
+// }
 
-console.log(sumOdd);
+// console.log(sumOdd);
 
 
-// Palindrome Check: 
+// // Palindrome Check: 
 
-function cheakPalindrome(str) {
+// function cheakPalindrome(str) {
 
-    const reverseStr = str.split('').reverse().join('');
+//     const reverseStr = str.split('').reverse().join('');
 
-    return str === reverseStr;
+//     return str === reverseStr;
 
-}
+// }
 
-console.log(cheakPalindrome("radar"));
+// console.log(cheakPalindrome("radar"));
 
 
-// Palindrome Check:  
-function isPalindrome(str) {
+// // Palindrome Check:  
+// function isPalindrome(str) {
 
-    const isYesPalindrome = str.split('').reverse().join('');
+//     const isYesPalindrome = str.split('').reverse().join('');
 
-    return str === isPalindrome;
+//     return str === isPalindrome;
 
-}
+// }
 
-console.log(isPalindrome("radar"));
-console.log(isPalindrome("hello"));
+// console.log(isPalindrome("radar"));
+// console.log(isPalindrome("hello"));
 
 
-// flatten Array challange 
+// // flatten Array challange 
 
-function flattenArray(arr) {
-    return arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
-}
+// function flattenArray(arr) {
+//     return arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flattenArray(val) : val), []);
+// }
 
-const nestedArray = [1, [2, [3, 4], 5]];
-console.log(flattenArray(nestedArray)); // [1, 2, 3, 4, 5]
+// const nestedArray = [1, [2, [3, 4], 5]];
+// console.log(flattenArray(nestedArray)); // [1, 2, 3, 4, 5]
 
-//   Maximum Element in Array: 
+// //   Maximum Element in Array: 
 
-function findMaxElement(arr) {
-    return Math.max(...arr);
+// function findMaxElement(arr) {
+//     return Math.max(...arr);
 
-}
+// }
 
-const numbers = [9, 6, 5, 6, 7, 89, 9, 87, 85, 5, 6];
+// const numbers = [9, 6, 5, 6, 7, 89, 9, 87, 85, 5, 6];
 
-console.log(findMax(numbers));
+// console.log(findMax(numbers));
 
-// using math.max and spred oprator 
+// // using math.max and spred oprator 
 
-let largeNum = [2, 3, 4, 5, 6, 7, 8, 88];
-let findNum = Math.max(...largeNum)
-console.log(largeNum);
+// let largeNum = [2, 3, 4, 5, 6, 7, 8, 88];
+// let findNum = Math.max(...largeNum)
+// console.log(largeNum);
 
 
 
-// Anagram Check: 
+// // Anagram Check: 
 
-function areAnagrams(str1,str2){
-    const sortedStr1 = str1.split('').sort().join('');
-    const sortedStr2 = str2.split('').sort().join('');
+// function areAnagrams(str1,str2){
+//     const sortedStr1 = str1.split('').sort().join('');
+//     const sortedStr2 = str2.split('').sort().join('');
 
-    return sortedtStr1 === sortedStr2;
-}
-console.log(areAnagrams("listen", "silent"));
-console.log(areAnagrams("hello", "silent"));
+//     return sortedtStr1 === sortedStr2;
+// }
+// console.log(areAnagrams("listen", "silent"));
+// console.log(areAnagrams("hello", "silent"));
 
 
-// using math.max and spred oprator 
+// // using math.max and spred oprator 
 
-let larNum1 = [4,5,8,7,5,5,6];
+// let larNum1 = [4,5,8,7,5,5,6];
 
-let getNum = Math.max(...larNum1);
+// let getNum = Math.max(...larNum1);
 
-console.log(getNum);
+// console.log(getNum);
 
 
-// thisPalindrome 
+// // thisPalindrome 
 
 
-let thisPalindrome ="aca";
-let thisPalindrome1="";
+// let thisPalindrome ="aca";
+// let thisPalindrome1="";
 
-for(let i=thisPalindrome.length-1; i>-1; i-- )
-{
-    thisPalindrome1=thisPalindrome1+thisPalindrome[i]
+// for(let i=thisPalindrome.length-1; i>-1; i-- )
+// {
+//     thisPalindrome1=thisPalindrome1+thisPalindrome[i]
     
-}
-console.log(thisPalindrome1)
+// }
+// console.log(thisPalindrome1)
 
-if(thisPalindrome1===thisPalindrome){
-    console.log("this is plaindroome string")
-}
-else{
-    console.log("this is not plaindroome string")
-}
-
-
-
-// using fucnctional method 
-function isPalindrome (str){
-
-    const yesIsPalindrome = str.split().reverse().join("");
-    str === isPalindrome;
-
-}
-
-console.log(isPalindrome("Racecar"));
-console.log(isPalindrome("ratecar"));
+// if(thisPalindrome1===thisPalindrome){
+//     console.log("this is plaindroome string")
+// }
+// else{
+//     console.log("this is not plaindroome string")
+// }
 
 
-// . 
 
-let day = "sunday";
+// // using fucnctional method 
+// function isPalindrome (str){
 
-switch (day){
-    case "monday":
-    console.log("this is school day");
-    break;
+//     const yesIsPalindrome = str.split().reverse().join("");
+//     str === isPalindrome;
 
-    case "tuesday":
-    console.log("this is school day");
-    break;
+// }
 
-    case "wendensday":
-    console.log("this is school day");
-    break;
+// console.log(isPalindrome("Racecar"));
+// console.log(isPalindrome("ratecar"));
 
-    case "thursday":
-    console.log("this is school day");
-    break;
 
-    case "friday":
-    console.log("this is school day");
-    break;
+// // . use of switch statement
 
-    case "saturday":
-    console.log("this is school day");
-    break;
+// let day = "kayny";
 
-    case "sunday":
-    console.log("this is school day");
-    break;
+// switch (day){
+//     case "monday":
+//     console.log("this is school day");
+//     break;
 
-    default :
-    console.log("Go to school bhosdike");
-    
-}
+//     case "tuesday":
+//     console.log("this is school day");
+//     break;
+
+//     case "wendensday":
+//     console.log("this is school day");
+//     break;
+
+//     case "thursday":
+//     console.log("this is school day");
+//     break;
+
+//     case "friday":
+//     console.log("this is school day");
+//     break;
+
+//     case "saturday":
+//     console.log("this is school day");
+//     break;
+
+//     case "sunday":
+//     console.log("this is school day");
+//     break;
+
+//     default :
+//     console.log("Go to school ");
+
+// }
+
+//  Javascript Date methods 
+
+let now = new Date('march 23 2023');
+
+// console.log(now.getMinutes());
+// console.log(now.getMilliseconds());
+
+
+// console.log(now.toDateString());
+// console.log(now.getMonth());
+// console.log(now.getDay());
+console.log(now.getFullYear());
+
