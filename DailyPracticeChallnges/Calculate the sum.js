@@ -292,7 +292,7 @@ let getNum = Math.max(...larNum1);
 console.log(getNum);
 
 
-// thisPalindrome ////////////////////////////
+// thisPalindrome 
 
 
 let thisPalindrome ="aca";
@@ -310,4 +310,56 @@ if(thisPalindrome1===thisPalindrome){
 }
 else{
     console.log("this is not plaindroome string")
+}
+
+
+
+// using fucnctional method 
+function isPalindrome (str){
+
+    const yesIsPalindrome = str.split().reverse().join("");
+    str === isPalindrome;
+
+}
+
+console.log(isPalindrome("Racecar"));
+console.log(isPalindrome("ratecar"));
+
+
+// . 
+
+let day = "sunday";
+
+switch (day){
+    case "monday":
+    console.log("this is school day");
+    break;
+
+    case "tuesday":
+    console.log("this is school day");
+    break;
+
+    case "wendensday":
+    console.log("this is school day");
+    break;
+
+    case "thursday":
+    console.log("this is school day");
+    break;
+
+    case "friday":
+    console.log("this is school day");
+    break;
+
+    case "saturday":
+    console.log("this is school day");
+    break;
+
+    case "sunday":
+    console.log("this is school day");
+    break;
+
+    default :
+    console.log("Go to school bhosdike");
+    
 }
