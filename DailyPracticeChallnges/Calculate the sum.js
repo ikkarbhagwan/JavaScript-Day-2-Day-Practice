@@ -366,7 +366,7 @@
 
 //  Javascript Date methods 
 
-let now = new Date('march 23 2023');
+// let now = new Date('march 23 2023');
 
 // console.log(now.getMinutes());
 // console.log(now.getMilliseconds());
@@ -375,5 +375,20 @@ let now = new Date('march 23 2023');
 // console.log(now.toDateString());
 // console.log(now.getMonth());
 // console.log(now.getDay());
-console.log(now.getFullYear());
+// console.log(now.getFullYear());
 
+
+// set date methods 
+
+let date = new Date();
+date.setFullYear(2022);
+console.log(date); // Updated date with the year 2023
+
+let date1 = new Date();
+date1.setMonth(12); // Note: Months are zero-based, so 11 is December
+console.log(date1); // Updated date with December
+
+
+let e = new Date();
+e.setDate(15);
+console.log(e); // Updated date with the 15th day of the month
