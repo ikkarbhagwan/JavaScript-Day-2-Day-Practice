@@ -124,3 +124,46 @@ function isPrimeNumber(num){
 }
 
 console.log(isPrimeNumber(6));
+
+
+// using setTime out 
+
+function displayQuestion(question){
+    console.log("Question :" + question);
+
+}
+
+function moveToNext(){
+    console.log("moving to next Question :");
+
+}
+
+const question1 = 'which is the capital of india?';
+const question2 = 'who wrote this book?';
+
+
+displayQuestion(question1);
+
+setTimeout(moveToNext, 3000);
+
+// aagian do this 
+
+const q1= 'who is this? ';
+const q2 = 'whi is this man ?';
+
+
+function display1(q){
+    console.log("yes this"+ q);
+
+}
+
+
+function display2(){
+    console.log("this is 2");
+
+}
+display1(q1);
+
+
+setTimeout(display2, 2000);
+
