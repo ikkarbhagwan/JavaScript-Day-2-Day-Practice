@@ -188,7 +188,116 @@ setTimeout(function () {
 
 // How can you pass arguments to the function inside setTimeout? 
 
-setTimeout(function(arg1,arg2){
-console.log(arg1 + arg2);
+setTimeout(function (arg1, arg2) {
+    console.log(arg1 + arg2);
 
-}),3000," hello im first ", "Hello im 2nd";
+}), 3000, " hello im first ", "Hello im 2nd";
+
+
+
+
+
+// closure 
+
+
+function outerFunction() {
+
+    let imOuterVariable = "i Am a outer function's Variable!";
+
+
+    function innerFunction() {
+
+        console.log(imOuterVariable);
+
+    }
+    return innerFunction;
+
+}
+
+
+const closure = outerFunction();
+
+closure();
+
+
+// Closures are often used in callback functions.  
+
+function doSomeThingAsync(callback) {
+
+    setTimeout(function () {
+        console.log("task completed!");
+        callback();
+
+    }), 3000;
+}
+
+doSomeThingAsync(function () {
+    console.log("callback executed.");
+
+});
+
+// agian 
+
+function thisAsync(callback){
+
+    setTimeout(function(){
+
+        console.log("executing started!");
+        callback();
+
+    }),3000;
+}
+thisAsync(function(){
+    console.log("callback executed!");
+
+});
+
+
+// map 
+
+
+
+const hisNumbers = [4,5,6,7,9,6];
+const squareNumbers = hisNumbers.map((num) => num * num);
+
+console.log(squareNumbers);
+
+
+// filter 
+
+const numbers2 = [2,5,5,6,5,4,2];
+
+const outputNum = numbers2.filter((num) => num % 2 === 0);
+
+console.log(outerFunction);
+
+const theseAre = [5,6,7,8,9,10,12,16];
+
+
+// 3 
+const result = theseAre
+.filter((num) => num % 2 === 0)
+.map((num) => num * num)
+.reduce((acc,current) => acc + current, 0);
+
+console.log(result);
+
+//  map 
+
+const rtRt = [1,2,3,4,5,6];
+
+const SquaredNumbers = rtRt.map(function(num){
+return num * num ;
+
+});
+
+console.log(squareNumbers);
+
+// 
+const filterNum = [2,3,4,5,6,7,8];
+const evenNumbers = filterNum.filter(function(num){
+return num % 2 === 0;
+
+})
+
+console.log(evenNumbers);
