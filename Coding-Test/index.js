@@ -47,20 +47,20 @@ console.log(isYes("racecar"));
 
 //findMaxNumber 
 
-const numbers =[10,5,8,9,88];
-const maxNum= findMaxNumber(numbers);
+const numbers = [10, 5, 8, 9, 88];
+const maxNum = findMaxNumber(numbers);
 
 console.log("this is max number: ", maxNum);
 
 
-function findMaxNumber(arr){
-return Math.max(...arr);
+function findMaxNumber(arr) {
+    return Math.max(...arr);
 
 }
 
 // is palindrome or not 
 
-function yesPalindrome(str){
+function yesPalindrome(str) {
 
     const result = str.split("").reverse().join("");
 
@@ -75,7 +75,7 @@ console.log(yesPalindrome("Hello"));
 
 ////agian palindrome 
 
-function palinDrome(str){
+function palinDrome(str) {
 
     const myOpration = str.split(" ").reverse().join("");
 
@@ -89,22 +89,22 @@ console.log(palinDrome("racecar"));
 
 // Write a JavaScript program to reverse a given string. 
 
-function reverseStringReduce(str){
+function reverseStringReduce(str) {
     let reversedString = '';
 
-    for(let i = str.length -1;i >=0; i-- ){
-        reverseString+=str[i];
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseString += str[i];
     }
     return reverseString;
 }
 
 
-function filterEvenNum (num){
-    return arr.filter(number => number% 2 ===0);
+function filterEvenNum(num) {
+    return arr.filter(number => number % 2 === 0);
 
 }
 
-var numbers1 = [10,5,6,55,88,45];
+var numbers1 = [10, 5, 6, 55, 88, 45];
 
 var evenNumbers = filterEvenNum(numbers);
 
@@ -113,13 +113,13 @@ console.log
 
 // Write a JavaScript function to check if a given number is prime. 
 
-function isPrimeNumber(num){
-    if(num <= 1) return false;
+function isPrimeNumber(num) {
+    if (num <= 1) return false;
 
-    for(let i = 2 ; i <= Math.sqrt(num); i++){
-        if(num % 1 ===0)return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % 1 === 0) return false;
     }
-    
+
     return true;
 }
 
@@ -128,12 +128,12 @@ console.log(isPrimeNumber(6));
 
 // using setTime out 
 
-function displayQuestion(question){
+function displayQuestion(question) {
     console.log("Question :" + question);
 
 }
 
-function moveToNext(){
+function moveToNext() {
     console.log("moving to next Question :");
 
 }
@@ -148,17 +148,17 @@ setTimeout(moveToNext, 3000);
 
 // aagian do this 
 
-const q1= 'who is this? ';
+const q1 = 'who is this? ';
 const q2 = 'whi is this man ?';
 
 
-function display1(q){
-    console.log("yes this"+ q);
+function display1(q) {
+    console.log("yes this" + q);
 
 }
 
 
-function display2(){
+function display2() {
     console.log("this is 2");
 
 }
@@ -167,3 +167,28 @@ display1(q1);
 
 setTimeout(display2, 2000);
 
+
+//  3rd example 
+
+function myFunction() {
+    console.log("Timeout completed!");
+
+}
+
+setTimeout(myFunction, 3000);
+
+// 4 
+
+setTimeout(function () {
+    console.log("this will be print after given time");
+
+
+}, 3000);
+
+
+// How can you pass arguments to the function inside setTimeout? 
+
+setTimeout(function(arg1,arg2){
+console.log(arg1 + arg2);
+
+}),3000," hello im first ", "Hello im 2nd";
