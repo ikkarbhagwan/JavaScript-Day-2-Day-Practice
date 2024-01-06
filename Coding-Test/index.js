@@ -85,3 +85,42 @@ function palinDrome(str){
 }
 
 console.log(palinDrome("racecar"));
+
+
+// Write a JavaScript program to reverse a given string. 
+
+function reverseStringReduce(str){
+    let reversedString = '';
+
+    for(let i = str.length -1;i >=0; i-- ){
+        reverseString+=str[i];
+    }
+    return reverseString;
+}
+
+
+function filterEvenNum (num){
+    return arr.filter(number => number% 2 ===0);
+
+}
+
+var numbers1 = [10,5,6,55,88,45];
+
+var evenNumbers = filterEvenNum(numbers);
+
+console.log
+
+
+// Write a JavaScript function to check if a given number is prime. 
+
+function isPrimeNumber(num){
+    if(num <= 1) return false;
+
+    for(let i = 2 ; i <= Math.sqrt(num); i++){
+        if(num % 1 ===0)return false;
+    }
+    
+    return true;
+}
+
+console.log(isPrimeNumber(6));
