@@ -37,6 +37,7 @@ switch (day) {
     case "saturday":
         console.log("Weekend begins!");
         break;
+        
 
     default:
         console.log("Enjoy your day");
