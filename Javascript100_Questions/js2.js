@@ -203,3 +203,10 @@ if (grade <= 100 && grade >= 80) {
     console.log(" You are fail in exam ..")
 };
 
+// 
+
+let array1 = [12,12,45,654,45,45,6645,5];
+
+let findMaxNum =array1.findMaxNum;
+console.log(findMaxNum);
+
