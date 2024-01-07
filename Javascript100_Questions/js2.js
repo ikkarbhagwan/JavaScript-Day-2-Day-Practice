@@ -205,8 +205,24 @@ if (grade <= 100 && grade >= 80) {
 
 // 
 
-let array1 = [12,12,45,654,45,45,6645,5];
+let array1 = [12, 12, 45, 654, 45, 45, 6645, 5];
 
-let findMaxNum =array1.findMaxNum;
-console.log(findMaxNum);
+let maxNumber = Math.max(...array1);
+
+console.log(maxNumber);
+
+
+// 
+
+let array12 = [12, 12, 45, 654, 45, 45, 6645, 5];
+
+let maxNumber2 = array1[0];
+
+for (let i = 1; i < array12.length; i++) {
+  if (array1[i] > maxNumber2) {
+    maxNumber2 = array1[i];
+  }
+}
+
+console.log(maxNumber2);
 
