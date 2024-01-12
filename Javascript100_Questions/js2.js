@@ -297,5 +297,19 @@ let familyPersons = [
 let findAverageAge = familyPersons.reduce((acc, curr) => acc + curr.age, 0);
 console.log(findAverageAge);
 
- let totalAvg = findAverageAge / familyPersons.length;
- console.log(totalAvg);
+let totalAvg = findAverageAge / familyPersons.length;
+console.log(totalAvg);
+
+
+///////////////////////////////////////////////////////////
+//  find occurance of distinct elements 
+
+let thisAre = [
+
+    "a", "b", "c", "d",
+     "e", "a", "c", "e"
+
+];
+
+const findOccurance = thisAre.reduce((acc, curr) => curr in acc ? {...thisAre, [curr]: acc [curr] + 1}:{...thisAre, [curr] : 1} ,{})
+console.log(findOccurance);
