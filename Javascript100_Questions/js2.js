@@ -219,10 +219,83 @@ let array12 = [12, 12, 45, 654, 45, 45, 6645, 5];
 let maxNumber2 = array1[0];
 
 for (let i = 1; i < array12.length; i++) {
-  if (array1[i] > maxNumber2) {
-    maxNumber2 = array1[i];
-  }
+    if (array1[i] > maxNumber2) {
+        maxNumber2 = array1[i];
+    }
 }
 
 console.log(maxNumber2);
 
+
+///////////////////////////////////////////////////////
+
+
+
+let mArray = [10, 65, 9, 86, 11, 10, 10, 10];
+
+let resultMyArray = mArray.reduce((acc, curr) => curr < 40 ? acc + curr : acc, 0);
+
+console.log(resultMyArray);
+
+
+////////////////////////////////////////////
+// No of exp.  
+let employee = [
+    {
+        name: "Bhagwan",
+        exp: 2
+    },
+    {
+
+        Fname: "krishna",
+        exp: 3
+
+    },
+
+    {
+        Fname: "mahesh",
+        exp: 5
+    },
+
+    {
+        Fname: "suresh",
+        exp: 5
+    }
+];
+
+// chaining mathods 
+
+let findWorkExperince = employee.filter(employee => employee.exp > 3 && employee.Fname).map(employee => employee.Fname);
+console.log(findWorkExperince);
+
+
+// FInd average Age 
+let familyPersons = [
+    {
+        name: "Bhagwan",
+        age: 23
+    },
+    {
+
+        Fname: "krishna",
+        age: 65
+
+    },
+
+    {
+        Fname: "mahesh",
+        age: 56
+    },
+
+    {
+        Fname: "suresh",
+        age: 25
+    }
+];
+
+
+let findAverageAge = familyPersons.reduce((acc, curr) => acc + curr.age, 0);
+console.log(findAverageAge);
+
+ let totalAvg = findAverageAge / familyPersons.length;
+ console.log(totalAvg);
