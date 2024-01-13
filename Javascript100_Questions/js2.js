@@ -313,3 +313,43 @@ let thisAre = [
 
 const findOccurance = thisAre.reduce((acc, curr) => curr in acc ? {...thisAre, [curr]: acc [curr] + 1}:{...thisAre, [curr] : 1} ,{})
 console.log(findOccurance);
+
+///////////////////////////////////////////////////////////////
+// reverse the string 
+
+let inputString = "i want to be specail in javascript";
+
+function myString(){
+
+let result = inputString.split("").reverse().join(" ");
+console.log(result);
+
+
+}
+myString();
+
+
+
+///////////////////////////////////////////////////////////////
+// prototypal inheritance 
+
+const hisAdmin ={
+    haslicence:false,
+}
+
+const admin = {
+isAdmin :true,
+__proto__:hisAdmin,
+
+};
+
+
+let myname = {
+
+    firstName : "bhagwan",
+    lastName :"ikkar",
+    __proto__: admin,
+}
+
+console.log(myname.haslicence);
+
