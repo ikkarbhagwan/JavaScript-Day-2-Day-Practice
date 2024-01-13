@@ -353,3 +353,4 @@ let myname = {
 
 console.log(myname.haslicence);
 
+// 
