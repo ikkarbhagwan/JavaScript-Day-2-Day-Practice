@@ -42,3 +42,12 @@ for(let kye in object){
     document.write(`the kye values are ${kye}` + "<br>");
 
 }
+
+/////////////////////////////////////////////////////
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+      break; // exit the loop when i is 3
+    }
+    console.log(i);
+  }
+  
