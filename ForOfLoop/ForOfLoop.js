@@ -51,3 +51,29 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
   }
   
+
+//   calc the sum of all elements in array 
+
+const numbers = [1, 2, 3, 4, 5];
+
+let sum = 0 ;
+
+for(let i = 0; i<numbers.length; i++){
+    sum += numbers[i];
+    }
+    console.log(sum);
+
+
+    ///////////////////////////////////////////
+
+
+for(let i = 0; i<6; i++){
+    let pattern =" ";
+    for(let j =1; j<7; j++){
+        pattern+="* ";
+        
+
+    }
+console.log(pattern);
+
+}
