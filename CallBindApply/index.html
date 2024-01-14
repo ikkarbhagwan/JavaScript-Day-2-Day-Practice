@@ -8,50 +8,24 @@
 <body>
     <script>
 
+        const person = {
+            job: "Developer"
+        };
 
-let name = {
-    firstName : "Akshay",
-    lastName : "saini",
-    printFullName : function (){
-        console.log(this.firstName + " " + this.lastName);
+        function input(name,age){
+            console.log(`Hello, ${name}! I am ${this.job} and I am ${age} years old.`);
 
-    }
-}
-name.printFullName();
-
-let name2 = {
-    firstName : "Jethha",
-    lastName : "babtaa",
-
-}
-
-name.printFullName.call(name2);
+        };
 
 
-// 2
+        input.apply(person,["vihan" , 23]);
+        input.call(person,"akshay", 21);
+        input.bind()
 
 
-let method = 'x';
-function say(title= 'Mr'){
-    return title + ' '+ this.method;
-
-
-}
-
-const person = {
-    name:'bhaguuuu',
-    age : 23,
-}
-
-const tata = method.bind(person);
-console.log(tata);
 
 
     </script>
 
-
-
-
-    
 </body>
 </html>

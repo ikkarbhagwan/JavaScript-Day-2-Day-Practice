@@ -10,3 +10,27 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+
+////////////////////////////////////////
+
+// call method in 
+
+let myName = {
+    firstname:"Bhagwan",
+    lastname:"ikkar",
+    printFullName: function(school){
+        console.log(this.firstname + " " + this.secondname);
+
+    }
+    
+}
+myName.printFullName();
+
+let hisName = {
+    firstname:"vinod",
+    lastname:"sharma"
+}
+myName.printFullName.call(hisName);
+
+

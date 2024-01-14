@@ -102,3 +102,19 @@ function isPalindrome(str) {
 
     }
     console.log(RemoveDuplicates([1,1,2,3,3,4,5,6,7]));
+
+    ////////////////////////////////////////////////////////////
+
+    function genMultiplicationTable(){
+      let tableRows  = [];
+
+      for (let i = 1; i <= 10; i++) {
+        let row = `7 * ${i} = ${7 * i}`;
+        tableRows.push(row);
+      }
+
+      return tableRows;
+    }
+
+    const multiplicationTable = generateMultiplicationTable();
+    console.log(multiplicationTable);
