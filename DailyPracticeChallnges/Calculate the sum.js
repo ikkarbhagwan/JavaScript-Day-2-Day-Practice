@@ -425,3 +425,45 @@ for (let i = 11; i <= 30; i += 2) {
 }
 
 console.log(sum);
+
+
+// Create a function that will return a Boolean specifying if a number is prime 
+
+function isPrime(n)
+{
+    if (n < 2)
+        return false;
+        
+    if (n == 2)
+        return true;
+    
+    let maxDiv = Math.sqrt(n);
+    
+    for(let i = 2; i <= maxDiv; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+println(2, " is prime? ", isPrime(2));
+println(3, " is prime? ", isPrime(3));
+println(4, " is prime? ", isPrime(4));
+println(5, " is prime? ", isPrime(5));
+println(9, " is prime? ", isPrime(9));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
