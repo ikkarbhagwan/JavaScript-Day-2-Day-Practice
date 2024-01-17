@@ -301,7 +301,7 @@
 // for(let i=thisPalindrome.length-1; i>-1; i-- )
 // {
 //     thisPalindrome1=thisPalindrome1+thisPalindrome[i]
-    
+
 // }
 // console.log(thisPalindrome1)
 
@@ -398,4 +398,30 @@ console.log(e); // Updated date with the 15th day of the month
 
 let printDate = new Date('feb 12 12');
 
-console.log(printDate.getDate() +"/"+ printDate.getMonth()+ "/" + printDate.getFullYear()+"/")
+console.log(printDate.getDate() + "/" + printDate.getMonth() + "/" + printDate.getFullYear() + "/");
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+// Calculate the sum of odd numbers greater than 10 and less than 30
+
+
+let sum = 0;
+
+for (let i = 11; i <= 30; i += 2) {
+    sum += i;
+}
+
+console.log(sum);
+
+// Calculate the sum of odd numbers greater than 10 and less than 30 
+
+sum = 0 ;
+
+for (let i = 11; i <= 30; i += 2) {
+
+    sum += i;
+}
+
+console.log(sum);
