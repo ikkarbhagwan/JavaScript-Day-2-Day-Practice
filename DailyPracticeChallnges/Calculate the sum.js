@@ -576,6 +576,5 @@ fruits.push('Mango');
 console.log('Array after adding Mango:', fruits);
 
 
-// Add an element to the end of the array
-fruits.push('Mango');
-console.log('Array after adding Mango:', fruits);
+fruits.pop();
+console.log('Array after removing the last element:', fruits);
