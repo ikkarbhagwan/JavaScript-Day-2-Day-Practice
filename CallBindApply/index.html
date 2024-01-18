@@ -28,7 +28,7 @@
 
         const students = {
 
-            fullName: function () {
+            fullName: function (city, country) {
                 return this.firstName + " " + this.lastName;
             }
         }
@@ -48,7 +48,7 @@
 
 
 
-        const result = students.fullName.apply(student1);
+        const result = students.fullName.apply(student1,"Oslo", "Norway");
         console.log(result);
 
 
