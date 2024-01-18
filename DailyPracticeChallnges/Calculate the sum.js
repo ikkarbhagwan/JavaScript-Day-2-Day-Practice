@@ -570,3 +570,12 @@ let fruits = ['Apple', 'Banana', 'Orange', 'Grapes'];
 
 // Print the original array
 console.log('Original array:', fruits);
+
+// Add an element to the end of the array
+fruits.push('Mango');
+console.log('Array after adding Mango:', fruits);
+
+
+// Add an element to the end of the array
+fruits.push('Mango');
+console.log('Array after adding Mango:', fruits);
