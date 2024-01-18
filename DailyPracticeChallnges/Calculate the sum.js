@@ -563,3 +563,10 @@ const myPromise = new Promise((resolve, reject) => {
 
 
 })
+
+
+// Example 1: Array manipulation
+let fruits = ['Apple', 'Banana', 'Orange', 'Grapes'];
+
+// Print the original array
+console.log('Original array:', fruits);
