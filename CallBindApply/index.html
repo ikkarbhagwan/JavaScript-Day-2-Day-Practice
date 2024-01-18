@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
-        const person = {
-            job: "Developer"
-        };
+        // const person = {
+        //     job: "Developer"
+        // };
 
-        function input(name,age){
-            console.log(`Hello, ${name}! I am ${this.job} and I am ${age} years old.`);
+        // function input(name, age) {
+        //     console.log(`Hello, ${name}! I am ${this.job} and I am ${age} years old.`);
 
-        };
+        // };
 
 
-        input.apply(person,["vihan" , 23]);
-        input.call(person,"akshay", 21);
-        input.bind()
+        // input.apply(person, ["vihan", 23]);
+        // input.call(person, "akshay", 21);
+        // input.bind()
+
+        //////////////////////////////////////////////////////////////////
+
+        const students = {
+
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        const student1 = {
+            firstName: "kumar",
+            lastName: "sharma"
+
+        }
+
+
+        const student2 = {
+            firstName: "aaditya",
+            lastName: "sharma"
+
+        }
+
+
+
+        const result = students.fullName.apply(student1);
+        console.log(result);
 
 
 
@@ -28,4 +57,5 @@
     </script>
 
 </body>
+
 </html>

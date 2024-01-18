@@ -536,7 +536,7 @@ const myPromise = new Promise((resolve, reject) => {
 
         // resolve the promise 
 
-        if(numberRandome<5){
+        if(numberRandome < 5){
             resolve("success!v randome number : " `${numberRandome}`)
         }
 
@@ -559,7 +559,7 @@ const myPromise = new Promise((resolve, reject) => {
         console.log(error);
 
     });
-    
+
 
 
 })
