@@ -523,3 +523,43 @@ button.addEventListener('click', function(){
     alert("im cliked ")
 })
 
+
+
+// async / await 
+
+const myPromise = new Promise((resolve, reject) => {
+    
+    setTimeout( () => {
+
+        const numberRandome = Math.floor(Math.random() * 10);
+
+
+        // resolve the promise 
+
+        if(numberRandome<5){
+            resolve("success!v randome number : " `${numberRandome}`)
+        }
+
+        // reject the promise
+        
+        else{
+            reject("Error! randme number : " `${numberRandome}`);
+
+        }
+
+
+    },1000);
+
+    myPromise
+    .then( (result) => {
+        console.log(result);
+    })
+
+    .catch( (error) =>{
+        console.log(error);
+
+    });
+    
+
+
+})
