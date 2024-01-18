@@ -578,3 +578,23 @@ console.log('Array after adding Mango:', fruits);
 
 fruits.pop();
 console.log('Array after removing the last element:', fruits);
+
+// Example 3: Object as a data structure
+let person = {
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City'
+};
+
+// Accessing and modifying object properties
+console.log('\nPerson details:', person);
+console.log('Name:', person.name);
+console.log('Age:', person.age);
+
+// Modifying the age property
+person.age = 26;
+console.log('Updated age:', person.age);
+
+// Adding a new property
+person.gender = 'Male';
+console.log('Updated person details:', person);
