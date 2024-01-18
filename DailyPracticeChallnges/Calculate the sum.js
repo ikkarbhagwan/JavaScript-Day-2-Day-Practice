@@ -510,3 +510,16 @@ for (const key in user) {
 
     console.log(`${key}: ${user[key]}`);
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Event handling : 
+
+<button id="demo"></button>
+
+const button = document.getElementById('demo');
+
+button.addEventListener('click', function(){
+    alert("im cliked ")
+})
+
