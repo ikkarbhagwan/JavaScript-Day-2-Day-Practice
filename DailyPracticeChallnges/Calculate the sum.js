@@ -598,3 +598,36 @@ console.log('Updated age:', person.age);
 // Adding a new property
 person.gender = 'Male';
 console.log('Updated person details:', person);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// calculate the sum of all the elements in the nested array 
+
+const nestedArray = [4, 5, [7, [1], 8], 7];
+
+
+function sumNestedArray(arr){
+    let sum3 = 0;
+
+    for(i = 0; i <arr.length; i++){
+
+        if(Array.isArray(arr[i])){
+
+            sum3 += sumNestedArray(arr[i];)
+        }else{
+            sum3 += arr[i];
+
+        }
+    }
+return sum;
+
+
+}
+
+const totalSum = sumNestedArray(nestedArray);
+console.log(totalSum);
+
+
+
+
+ 
