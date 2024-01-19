@@ -678,7 +678,7 @@ function secondArray(arr){
     return arr.reduce( (sum , current) => {
 
         if(Array.isArray(current)){
-            return sum + firstArray(current);
+            return sum + secondArray(current);
 
         }
         return sum + current ;
@@ -690,3 +690,21 @@ function secondArray(arr){
 
 const collectSum = secondArray(firstArray);
 console.log(collectSum);
+
+
+// again for more practice  2 
+
+const givenArray = [4, 5, [7, [1], 8], 7];
+
+function findAllSum(arr){
+
+    return arr.reduce( (sum , current) => {
+
+       return Array.isArray(current) ? sum + findAllSum(current) : sum + current;
+    }, 0)
+
+}
+
+
+const getSum = findAllSum(givenArray);
+
