@@ -417,7 +417,7 @@ console.log(sum);
 
 // Calculate the sum of odd numbers greater than 10 and less than 30 
 
-sum = 0 ;
+sum = 0;
 
 for (let i = 11; i <= 30; i += 2) {
 
@@ -429,24 +429,21 @@ console.log(sum);
 
 // Create a function that will return a Boolean specifying if a number is prime 
 
-function isPrime(n)
-{
+function isPrime(n) {
     if (n < 2)
         return false;
-        
+
     if (n == 2)
         return true;
-    
+
     let maxDiv = Math.sqrt(n);
-    
-    for(let i = 2; i <= maxDiv; i++)
-    {
-        if (n % i == 0)
-        {
+
+    for (let i = 2; i <= maxDiv; i++) {
+        if (n % i == 0) {
             return false;
         }
     }
-    
+
     return true;
 }
 
@@ -462,7 +459,7 @@ println(9, " is prime? ", isPrime(9));
 const object = { a: 1, b: 2, c: 3 };
 
 for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
+    console.log(`${property}: ${object[property]}`);
 }
 
 
@@ -471,8 +468,8 @@ for (const property in object) {
 const obj = { a: 1, b: 2 };
 
 for (const prop in obj) {
-  console.log(`obj.${prop} = ${obj[prop]}`);
-  obj.c = 3;
+    console.log(`obj.${prop} = ${obj[prop]}`);
+    obj.c = 3;
 }
 
 
@@ -481,7 +478,7 @@ for (const prop in obj) {
 const array1 = ['a', 'b', 'c'];
 
 for (const element of array1) {
-  console.log(element);
+    console.log(element);
 }
 
 // Expected output: "a"
@@ -519,7 +516,7 @@ for (const key in user) {
 
 const button = document.getElementById('demo');
 
-button.addEventListener('click', function(){
+button.addEventListener('click', function () {
     alert("im cliked ")
 })
 
@@ -528,37 +525,37 @@ button.addEventListener('click', function(){
 // async / await 
 
 const myPromise = new Promise((resolve, reject) => {
-    
-    setTimeout( () => {
+
+    setTimeout(() => {
 
         const numberRandome = Math.floor(Math.random() * 10);
 
 
         // resolve the promise 
 
-        if(numberRandome < 5){
+        if (numberRandome < 5) {
             resolve("success!v randome number : " `${numberRandome}`)
         }
 
         // reject the promise
-        
-        else{
+
+        else {
             reject("Error! randme number : " `${numberRandome}`);
 
         }
 
 
-    },1000);
+    }, 1000);
 
     myPromise
-    .then( (result) => {
-        console.log(result);
-    })
+        .then((result) => {
+            console.log(result);
+        })
 
-    .catch( (error) =>{
-        console.log(error);
+        .catch((error) => {
+            console.log(error);
 
-    });
+        });
 
 
 
@@ -606,20 +603,20 @@ console.log('Updated person details:', person);
 const nestedArray = [4, 5, [7, [1], 8], 7];
 
 
-function sumNestedArray(arr){
+function sumNestedArray(arr) {
     let sum3 = 0;
 
-    for(i = 0; i <arr.length; i++){
+    for (i = 0; i < arr.length; i++) {
 
-        if(Array.isArray(arr[i])){
+        if (Array.isArray(arr[i])) {
 
             sum3 += sumNestedArray(arr[i];)
-        }else{
+        } else {
             sum3 += arr[i];
 
         }
     }
-return sum;
+    return sum;
 
 
 }
@@ -628,6 +625,23 @@ const totalSum = sumNestedArray(nestedArray);
 console.log(totalSum);
 
 
+// using Reduce method 
+
+const nestedArray2 = [4, 5, [7, [1], 8], 7];
+
+function sumOfArray(arr) {
+
+    return arr.reduce((sum, current) => {
+        if(Array.isArray(current)){
+            return sum + sumOfArray(current);
+        }
+        return sum + current;
 
 
- 
+    }, 0)
+
+}
+const findTotal = sumOfArray(nestedArray2);
+console.log(findTotal);
+
+
