@@ -730,3 +730,25 @@ console.log(getAnswer);
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const fourArray = [4, 5, [7, [1], 8], 7];
+
+function plusArray(arr){
+
+    return arr.reduce( () => {
+
+        if(Array.isArray(current)){
+
+            return sum + plusArray(current);
+
+        }
+
+        return sum + current;
+
+    }, 0);
+
+}
+
+console.log(plusArray(fourArray));
