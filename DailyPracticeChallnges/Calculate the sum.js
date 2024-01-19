@@ -708,3 +708,25 @@ function findAllSum(arr){
 
 const getSum = findAllSum(givenArray);
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const addArray = [4, 5, [7, [1], 8], 7];
+
+function sumOfAll(arr){
+
+
+    return arr.reduce( (sum , current) => {
+
+        return Array.isArray(current) ? sum + sumOfAll(current) : sum + current;
+        
+    } , 0)
+
+
+}
+
+const getAnswer = sumOfAll(addArray);
+console.log(getAnswer);
+
+
+
