@@ -673,16 +673,16 @@ console.log(achieveSum(qArray));
 
 const firstArray = [4, 5, [7, [1], 8], 7];
 
-function secondArray(arr){
+function secondArray(arr) {
 
-    return arr.reduce( (sum , current) => {
+    return arr.reduce((sum, current) => {
 
-        if(Array.isArray(current)){
+        if (Array.isArray(current)) {
             return sum + secondArray(current);
 
         }
-        return sum + current ;
-        
+        return sum + current;
+
 
     }, 0)
 
@@ -696,11 +696,11 @@ console.log(collectSum);
 
 const givenArray = [4, 5, [7, [1], 8], 7];
 
-function findAllSum(arr){
+function findAllSum(arr) {
 
-    return arr.reduce( (sum , current) => {
+    return arr.reduce((sum, current) => {
 
-       return Array.isArray(current) ? sum + findAllSum(current) : sum + current;
+        return Array.isArray(current) ? sum + findAllSum(current) : sum + current;
     }, 0)
 
 }
@@ -713,14 +713,14 @@ const getSum = findAllSum(givenArray);
 
 const addArray = [4, 5, [7, [1], 8], 7];
 
-function sumOfAll(arr){
+function sumOfAll(arr) {
 
 
-    return arr.reduce( (sum , current) => {
+    return arr.reduce((sum, current) => {
 
         return Array.isArray(current) ? sum + sumOfAll(current) : sum + current;
-        
-    } , 0)
+
+    }, 0)
 
 
 }
@@ -735,11 +735,11 @@ console.log(getAnswer);
 
 const fourArray = [4, 5, [7, [1], 8], 7];
 
-function plusArray(arr){
+function plusArray(arr) {
 
-    return arr.reduce( () => {
+    return arr.reduce(() => {
 
-        if(Array.isArray(current)){
+        if (Array.isArray(current)) {
 
             return sum + plusArray(current);
 
@@ -752,3 +752,46 @@ function plusArray(arr){
 }
 
 console.log(plusArray(fourArray));
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// find the sum of all values in an array containing both negative and positive numbers 
+
+
+
+const numbers = [-2, 5, -8, 10, -3];
+
+const sumofArray = numbers.reduce((sum, current) => {
+
+    if (current > 0) {
+        return sum + current;
+
+    } else {
+        return sum;
+
+    }
+
+
+}, 0)
+console.log(sumofArray);
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// again same 
+
+const numbers2 = [-2, 5, -8, 10, -3];
+
+const findTheSum = numbers2.reduce( (sumValue, currentValue) => {
+
+    return currentValue > 0 ? sumValue + currentValue : sumValue;
+
+
+}, 0 );
+
+console.log(findTheSum);
+
