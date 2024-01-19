@@ -645,3 +645,25 @@ const findTotal = sumOfArray(nestedArray2);
 console.log(findTotal);
 
 
+// using Reduce method again 
+
+const qArray = [4, 5, [7, [1], 8], 7];
+
+function achieveSum(arr){
+
+    return arr.reduce( (sum, current) => {
+
+        if(Array.isArray(current)){
+            return sum + achieveSum(current);
+
+        }
+
+    return sum + current
+
+    }, 0)
+
+
+}
+console.log(achieveSum(qArray));
+
+
