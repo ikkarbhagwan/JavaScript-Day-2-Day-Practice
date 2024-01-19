@@ -632,7 +632,7 @@ const nestedArray2 = [4, 5, [7, [1], 8], 7];
 function sumOfArray(arr) {
 
     return arr.reduce((sum, current) => {
-        if(Array.isArray(current)){
+        if (Array.isArray(current)) {
             return sum + sumOfArray(current);
         }
         return sum + current;
@@ -649,16 +649,16 @@ console.log(findTotal);
 
 const qArray = [4, 5, [7, [1], 8], 7];
 
-function achieveSum(arr){
+function achieveSum(arr) {
 
-    return arr.reduce( (sum, current) => {
+    return arr.reduce((sum, current) => {
 
-        if(Array.isArray(current)){
+        if (Array.isArray(current)) {
             return sum + achieveSum(current);
 
         }
 
-    return sum + current
+        return sum + current
 
     }, 0)
 
@@ -667,3 +667,26 @@ function achieveSum(arr){
 console.log(achieveSum(qArray));
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// again for more practice 
+
+const firstArray = [4, 5, [7, [1], 8], 7];
+
+function secondArray(arr){
+
+    return arr.reduce( (sum , current) => {
+
+        if(Array.isArray(current)){
+            return sum + firstArray(current);
+
+        }
+        return sum + current ;
+        
+
+    }, 0)
+
+}
+
+const collectSum = secondArray(firstArray);
+console.log(collectSum);
