@@ -1007,3 +1007,18 @@ for(let i = 1; i<=10; i++){
     console.log(i);
 
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+let person = {
+
+    name:"Bhagwan",
+    age:32,
+    job:"Developer"
+    
+};
+
+for(let key in person){
+    console.log(`${key} : ${person[key]}`);
+    
+}
