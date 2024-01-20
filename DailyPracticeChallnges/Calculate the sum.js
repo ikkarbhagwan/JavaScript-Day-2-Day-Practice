@@ -809,3 +809,19 @@ function reverseString(str){
 
 console.log(reverseString("hello"));
 
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// 2. Palindrome Check:
+
+function thisIsPalindrome(str){
+
+    const checkIf =  str.split('').reverse().join('');
+
+    return str === checkIf ;
+
+}
+
+console.log(thisIsPalindrome("racecar"));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
