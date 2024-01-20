@@ -786,12 +786,12 @@ console.log(sumofArray);
 
 const numbers2 = [-2, 5, -8, 10, -3];
 
-const findTheSum = numbers2.reduce( (sumValue, currentValue) => {
+const findTheSum = numbers2.reduce((sumValue, currentValue) => {
 
     return currentValue > 0 ? sumValue + currentValue : sumValue;
 
 
-}, 0 );
+}, 0);
 
 console.log(findTheSum);
 
@@ -800,8 +800,8 @@ console.log(findTheSum);
 
 // 1. Reverse a String:
 
-function reverseString(str){
-    
+function reverseString(str) {
+
     return str.split('').reverse().join('');
 
 }
@@ -813,11 +813,11 @@ console.log(reverseString("hello"));
 
 // 2. Palindrome Check:
 
-function thisIsPalindrome(str){
+function thisIsPalindrome(str) {
 
-    const checkIf =  str.split('').reverse().join('');
+    const checkIf = str.split('').reverse().join('');
 
-    return str === checkIf ;
+    return str === checkIf;
 
 }
 
@@ -827,18 +827,18 @@ console.log(thisIsPalindrome("racecar"));
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 
-for(let i = 0 ; i<=100; i++){
+for (let i = 0; i <= 100; i++) {
 
-    if (i % 3 === 0 && i % 5 === 0){
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
 
-    }else if( i % 3 === 0 ){
+    } else if (i % 3 === 0) {
         console.log("Fizz");
 
-    }else if( i % 5 === 0 ){
+    } else if (i % 5 === 0) {
         console.log("Buzz");
 
-    }else{
+    } else {
         console.log(i);
     }
 
@@ -850,13 +850,13 @@ for(let i = 0 ; i<=100; i++){
 // 4. Factorial:
 
 
-const Factorial = (x) =>{
-    if(x === 0 || x === 0 ){
+const Factorial = (x) => {
+    if (x === 0 || x === 0) {
         return 1;
 
     }
 
-    return x * Factorial(x-1);
+    return x * Factorial(x - 1);
 
 }
 console.log(Factorial(5));
@@ -873,8 +873,8 @@ let maxSum = nums[0];
 let currentSum = nums[0];
 
 for (let i = 1; i < nums.length; i++) {
-  currentSum = Math.max(nums[i], currentSum + nums[i]);
-  maxSum = Math.max(maxSum, currentSum);
+    currentSum = Math.max(nums[i], currentSum + nums[i]);
+    maxSum = Math.max(maxSum, currentSum);
 }
 
 console.log(maxSum); // Output: 6
@@ -886,9 +886,9 @@ console.log(maxSum); // Output: 6
 let x = 15;
 
 if (x > 10) {
-  console.log("x is greater than 10");
+    console.log("x is greater than 10");
 } else {
-  console.log("x is less than or equal to 10");
+    console.log("x is less than or equal to 10");
 }
 
 
@@ -897,11 +897,11 @@ if (x > 10) {
 let number = 7;
 
 if (number > 0) {
-  console.log("Positive");
+    console.log("Positive");
 } else if (number < 0) {
-  console.log("Negative");
+    console.log("Negative");
 } else {
-  console.log("Zero");
+    console.log("Zero");
 }
 
 
@@ -918,47 +918,55 @@ console.log(result);
 let num = 15;
 
 if (num % 3 === 0 && num % 5 === 0) {
-  console.log("Divisible by both 3 and 5");
+    console.log("Divisible by both 3 and 5");
 } else if (num % 3 === 0) {
-  console.log("Divisible by 3 only");
+    console.log("Divisible by 3 only");
 } else if (num % 5 === 0) {
-  console.log("Divisible by 5 only");
+    console.log("Divisible by 5 only");
 } else {
-  console.log("Not divisible by 3 or 5");
+    console.log("Not divisible by 3 or 5");
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 for (let i = 1; i <= 5; i++) {
     console.log(i);
-  }
-  
-
-
-  ///////////////////////////////////////////////////////////////////////////////////////////
-
-
-  let i = 2;
-
-while (i <= 10) {
-  console.log(i);
-  i += 2;
 }
 
 
 
-  ///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
 
 
-  let i = 1;
+let i = 2;
+
+while (i <= 10) {
+    console.log(i);
+    i += 2;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+let i = 1;
 
 do {
-  console.log(i);
-  i++;
+    console.log(i);
+    i++;
 } while (i <= 5);
 
 
-  ///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// Looping through an array:
 
 
-  ///////////////////////////////////////////////////////////////////////////////////////////
+let array = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
