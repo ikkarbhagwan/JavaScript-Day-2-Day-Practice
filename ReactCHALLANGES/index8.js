@@ -20,7 +20,7 @@ const parent = () => {
             <h3>Update Parent State Challenge (Using Callback)</h3>
             <div className="callme">{value}</div>
             <div className="wrapper">
-                <Child />
+                <Child setValue={setValue} />
             </div>
         </div>
     )
