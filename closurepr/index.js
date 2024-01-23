@@ -1,18 +1,38 @@
 
-const myName = document.getElementById('my-name');
-const myBtn = document.getElementById('my-btn');
+// const myName = document.getElementById('my-name');
+// const myBtn = document.getElementById('my-btn');
 
 
-const makeSizeLarge = (size) =>{
+// const makeSizeLarge = (size) =>{
 
-    const changeSize = () => {
-            myName.style.fontSize =`${size}px`;
+//     const changeSize = () => {
+//             myName.style.fontSize =`${size}px`;
 
+//     }
+//     return changeSize;
+
+// }
+
+// const increseBtn = makeSizeLarge(55);
+
+// myBtn.addEventListener('click', increseBtn)
+
+// counter 
+
+function makeCounter() {
+    let count = 1;
+
+
+    function increment() {
+        console.log(count++)
     }
-    return changeSize;
+
+    return increment;
 
 }
 
-const increseBtn = makeSizeLarge(55);
+const counter1 = makeCounter();
 
-myBtn.addEventListener('click', increseBtn)
+counter1();
+counter1();
+
