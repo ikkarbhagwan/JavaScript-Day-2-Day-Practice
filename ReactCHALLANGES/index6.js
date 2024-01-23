@@ -11,3 +11,4 @@ const myComponent = () => {
         </div>
     )
 }
+export default myComponent;
