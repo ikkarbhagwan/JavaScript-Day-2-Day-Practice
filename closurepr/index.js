@@ -35,4 +35,3 @@ const counter1 = makeCounter();
 
 counter1();
 counter1();
-
