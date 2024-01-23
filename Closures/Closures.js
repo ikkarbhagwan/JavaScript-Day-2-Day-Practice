@@ -167,3 +167,27 @@ function createButton(){
 }
 
 const myButton = createButton();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// closure examples 
+
+function main(){
+
+    const name = "piyush garg"
+
+
+    function sayName(){
+
+        console.log(name);
+
+    }
+
+    sayName();
+
+}
+
+let formedClosure = main();
+
+console.log(formedClosure);
+
