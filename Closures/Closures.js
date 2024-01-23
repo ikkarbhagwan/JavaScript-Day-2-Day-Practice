@@ -191,3 +191,26 @@ let formedClosure = main();
 
 console.log(formedClosure);
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// practical function 
+
+function adder(){
+
+
+    function add(b){
+        console.log(num + b);
+
+
+    }
+    return add;
+
+}
+
+const addto5 = adder(5);
+const addto05 = adder(45);
+
+addto05(55);
+
+
