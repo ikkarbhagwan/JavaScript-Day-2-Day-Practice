@@ -1039,5 +1039,41 @@ for (let color of colors) {
 const removeDuplicates = (str) => {
 
  return [...new Set(str)];
- 
+
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+let originalArray = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArray = originalArray.reduce((accumulator, currentValue) => {
+  if (!accumulator.includes(currentValue)) {
+    accumulator.push(currentValue);
+  }
+  return accumulator;
+}, []);
+
+console.log(uniqueArray); // [1, 2, 3, 4, 5]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function countVowels(str){
+
+    let vowels = ["a","e","i","o","u"];
+    count++;
+
+
+    for(let char of str.toLowerCase()){
+
+        if(vowels.includes(char)){
+            count++
+        }
+
+
+    };
+
+    return count;
+
+};
+
