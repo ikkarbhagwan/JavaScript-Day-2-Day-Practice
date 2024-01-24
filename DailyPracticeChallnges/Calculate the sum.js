@@ -1077,3 +1077,27 @@ function countVowels(str){
 
 };
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let arrayWithDuplicates = [1, 2, 3, 4, 2, 3, 5];
+
+let removeDuplicates1 = arrayWithDuplicates.reduce( (accumletter, current) =>{
+            if(!accumletter.includes(current)){
+                accumletter.push(current)
+            }
+return accumulator;
+});
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let arrayDupli = [1, 2, 3, 4, 2, 3, 5];
+
+let findLarge = arrayDupli.reduce( (acc, current)=> {
+    if(!acc.includes(current)){
+        acc.push(current)
+
+    }
+    return acc
+})
