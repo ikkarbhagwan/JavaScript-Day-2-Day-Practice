@@ -1120,4 +1120,14 @@ let findUniue = chars1.filter( (e, index) => {
 
 console.log(findUniue);
 
+///////////////////////////////////////////////////////////////////////////////////////////////
 
+let arr = ["apple", "mango", "apple",
+          "orange", "mango", "mango"];
+
+
+function removeD(elem){
+return arr.filter( (item, index) =>arr,indexOf(item) ===index);
+
+}
+console.log(removeD(elem));
