@@ -1107,3 +1107,17 @@ let findLarge = arrayDupli.reduce( (acc, current)=> {
 let chars = ['A', 'B', 'A', 'C', 'B'];
 let uniqueChars = [...new Set(chars)];
 console.log(uniqueChars);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+let chars1 = ['A', 'B', 'A', 'C', 'B'];
+
+let findUniue = chars1.filter( (e, index) => {
+    return chars1.indexOf(e) === index;
+
+});
+
+console.log(findUniue);
+
+
