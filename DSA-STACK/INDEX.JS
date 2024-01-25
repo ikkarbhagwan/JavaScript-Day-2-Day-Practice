@@ -4,7 +4,6 @@ let max = 6;
 
 function push(newValue) {
 
-
     if (currentSize >= max) {
         console.log("Stack is full you can't add" + newValue);
 

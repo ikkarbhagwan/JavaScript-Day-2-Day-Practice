@@ -1104,3 +1104,6 @@ let findLarge = arrayDupli.reduce( (acc, current)=> {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
+let chars = ['A', 'B', 'A', 'C', 'B'];
+let uniqueChars = [...new Set(chars)];
+console.log(uniqueChars);
