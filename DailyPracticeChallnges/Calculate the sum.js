@@ -1131,3 +1131,12 @@ return arr.filter( (item, index) =>arr,indexOf(item) ===index);
 
 }
 console.log(removeD(elem));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+const unsorted =[1,2,3,4,5,6];
+
+const result44 = unsorted.sort((a,b) => b-a);
+console.log(result44);
+
