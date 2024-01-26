@@ -85,3 +85,26 @@ console.log(stack);
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Reverse a string using a JavaScript stack 
+function Reverse(str){
+    
+
+    let stack = [];
+
+    for(let i = 0; i< str.length; i++){
+        stack.push(str[i]);
+
+    }
+    let reverseStr = '';
+    while(stack.length>0){
+        reverseStr += stack.pop();
+
+    }
+    return reverseStr;
+
+
+}
+
+console.log(Reverse('Bhagwan Ikkar'));
