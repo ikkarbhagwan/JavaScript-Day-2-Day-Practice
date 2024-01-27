@@ -1197,5 +1197,8 @@ let array = [1, 2, 3, 4, 5];
 
 array.splice(2,2,"R","Y");
 
+// SPLICE adding  
 
+let array = [1, 2, 3, 4, 5];
+Array.splice(2,0,"j","J")
 
