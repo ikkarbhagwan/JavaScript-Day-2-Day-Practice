@@ -1148,9 +1148,27 @@ let issarray = [1, 2, 2, 3, 4, 4, 5];
 
 let uniqueArray1 = [];
 
-for(let value in issarray){
+ for(let value in issarray){
     if(!uniqueArray1.includes(value)){
         uniqueArray1.push(value)
     }
 };
 console.log(uniqueArray1);
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+let users = [
+    { firstname: 'John', lastname: 'Doe', age: 25 },
+    { firstname: 'Alice', lastname: 'Smith', age: 30 },
+    { firstname: 'Bob', lastname: 'Johnson', age: 22 }
+];
+
+// list of full names
+
+const output = users.map( (x) =>x.firstname +" "+ x.lastname);
+
+console.log(output);
