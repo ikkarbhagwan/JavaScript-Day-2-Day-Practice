@@ -1169,6 +1169,17 @@ let users = [
 
 // list of full names
 
-const output = users.map( (x) =>x.firstname +" "+ x.lastname);
+// const output = users.map( (x) =>x.firstname +" "+ x.lastname);
 
-console.log(output);
+// console.log(output);
+
+const findOut = users.reduce( (acc, curr){
+    if(acc[curr.age]){
+        acc[curr.age] = ++acc[curr.age];
+
+    }
+   return acc;
+
+},{});
+
+console.log(findOut);
