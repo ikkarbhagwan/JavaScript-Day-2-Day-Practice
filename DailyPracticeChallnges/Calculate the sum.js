@@ -1202,3 +1202,19 @@ array.splice(2,2,"R","Y");
 let array = [1, 2, 3, 4, 5];
 Array.splice(2,0,"j","J")
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let users = [
+    { firstname: 'John', lastname: 'Doe', age: 25 },
+    { firstname: 'Alice', lastname: 'Smith', age: 30 },
+    { firstname: 'Bob', lastname: 'Johnson', age: 22 }
+];
+
+const output = users.filter( (x) =>x.age > 20)
+.map( (x) => x.firstname);
+
+console.log(output);
+
