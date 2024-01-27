@@ -3,34 +3,34 @@
 //     constructor() {
 //         this.items = [];
 //     }
-    
+
 //     // add element to the stack
 //     add(element) {
 //         return this.items.push(element);
 //     }
-    
+
 //     // remove element from the stack
 //     remove() {
 //         if(this.items.length > 0) {
 //             return this.items.pop();
 //         }
 //     }
-    
+
 //     // view the last element
 //     peek() {
 //         return this.items[this.items.length - 1];
 //     }
-    
+
 //     // check if the stack is empty
 //     isEmpty(){
 //        return this.items.length == 0;
 //     }
-   
+
 //     // the size of the stack
 //     size(){
 //         return this.items.length;
 //     }
- 
+
 //     // empty the stack
 //     clear(){
 //         this.items = [];
@@ -88,17 +88,17 @@ console.log(stack);
 
 
 // Reverse a string using a JavaScript stack 
-function Reverse(str){
-    
+function Reverse(str) {
+
 
     let stack = [];
 
-    for(let i = 0; i< str.length; i++){
+    for (let i = 0; i < str.length; i++) {
         stack.push(str[i]);
 
     }
     let reverseStr = '';
-    while(stack.length>0){
+    while (stack.length > 0) {
         reverseStr += stack.pop();
 
     }
@@ -108,3 +108,53 @@ function Reverse(str){
 }
 
 console.log(Reverse('Bhagwan Ikkar'));
+
+
+
+
+
+function inputFiled(str) {
+
+    let stack = [];
+
+    for (let i = 0; i < str.length; i++) {
+        stack.push(str[i]);
+
+    }
+
+    let reverseString = '';
+
+
+    while (stack.length > 0) {
+        reverseString = reverseString + stack.pop();
+
+    }
+    return reverseString;
+
+
+}
+
+console.log(inputFiled('jay Hanuman'));
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+let queue = [];
+
+let currentSize = queue.length;
+let maxSize = 5;
+
+function enqueue(newValue) {
+    queue[currentSize] = newValue;
+currentSize++;
+
+}
+
+function display(){
+    console.log(queue);
+
+}
+
+
+display();
+enqueue(10);

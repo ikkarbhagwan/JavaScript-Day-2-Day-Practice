@@ -1144,3 +1144,13 @@ console.log(result44);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
+let issarray = [1, 2, 2, 3, 4, 4, 5];
+
+let uniqueArray1 = [];
+
+for(let value in issarray){
+    if(!uniqueArray1.includes(value)){
+        uniqueArray1.push(value)
+    }
+};
+console.log(uniqueArray1);
