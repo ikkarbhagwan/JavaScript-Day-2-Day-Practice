@@ -1173,13 +1173,29 @@ let users = [
 
 // console.log(output);
 
-const findOut = users.reduce( (acc, curr){
-    if(acc[curr.age]){
-        acc[curr.age] = ++acc[curr.age];
+// const findOut = users.reduce( (acc, curr){
+//     if(acc[curr.age]){
+//         acc[curr.age] = ++acc[curr.age];
 
-    }
-   return acc;
+//     }
+//    return acc;
 
-},{});
+// },{});
 
-console.log(findOut);
+// console.log(findOut);
+
+
+// splice REMOVE
+let array = [1,2,3,4,5];
+
+let result6 = array.splice(2,1)
+console.log(result6);
+
+// SPLICE REPLACING 
+
+let array = [1, 2, 3, 4, 5];
+
+array.splice(2,2,"R","Y");
+
+
+
