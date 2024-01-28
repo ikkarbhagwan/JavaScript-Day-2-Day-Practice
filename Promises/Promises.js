@@ -64,7 +64,7 @@ promiseThree.then(function (user) {
 });
 
 
-// promise third example 
+// promise four example 
 
 const promiseFour = new Promise(function (resolve, reject) {
 
