@@ -70,16 +70,35 @@ let given = [10, 222, 22, 11, 11, 55, 66, 44, 12, 222];
 
 const uniqueArray = [];
 
-for (let i = 1; i < given.length; i++){
+for (let i = 1; i < given.length; i++) {
 
-  const currentElemnt = given[i];
+    const currentElemnt = given[i];
 
-  if(!uniqueArray.includes(currentElemnt)){
+    if (!uniqueArray.includes(currentElemnt)) {
 
-    uniqueArray.push(currentElemnt);
+        uniqueArray.push(currentElemnt);
 
-  }
+    }
 
 };
 
 console.log(uniqueArray);
+
+
+// 2. time again for more understanding
+
+let array1 = [1, 2, 3, 4, 5, 6, 7, 1, 2, 4, 8, 5];
+
+let result1 = [];
+
+for (let i = 1; i < array1.length; i++) {
+    const newVar = array1[i];
+
+
+    if (!result1.includes(newVar)) {
+
+        result1.push(newVar)
+    }
+};
+
+console.log(result1);
