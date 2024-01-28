@@ -1273,3 +1273,18 @@ let isThisPalindrome = (value) => {
 }
 
 console.log(givenStr);
+
+
+
+// checking is plaindrome
+
+function isPalindrome1(str){
+
+    let reverse = str.split('').reverse().join('');
+
+    reverse === str ? "This is example of Palindrome String!" : "This is not Palindrome string Example!";
+
+}
+
+console.log(isPalindrome1("Level"));
+console.log(isPalindrome1("salamn"));
