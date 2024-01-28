@@ -1323,3 +1323,16 @@ let removeTheDuplicates = array2.reduce( (accumulator, current) => {
 },[]);
 
 console.log(removeTheDuplicates);
+
+
+
+// using filter method 
+
+let arrayy = [1, 2, 3, 4, 4, 5, 6, 6];
+
+const findRight = arrayy.filter( (value,index,self) => {
+    return self.indexOf(value) === index;
+
+
+});
+console.log(findRight);
