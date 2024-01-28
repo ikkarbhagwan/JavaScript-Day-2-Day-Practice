@@ -1336,3 +1336,15 @@ const findRight = arrayy.filter( (value,index,self) => {
 
 });
 console.log(findRight);
+
+
+// find maximum number in an array 
+
+let inputArray = [10,20,30,50,95,85,55,45];
+
+let findMaximumNumber = inputArray.reduce( (max, currentValue) => {
+    return max > currentValue ? max : currentValue;
+
+
+});
+console.log(findMaximumNumber);
