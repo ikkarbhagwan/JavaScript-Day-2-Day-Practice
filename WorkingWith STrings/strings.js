@@ -23,6 +23,9 @@ console.log(airLine.slice(2));
 console.log(airLine.slice(airLine.lastIndexOf(' ') + 1))
 console.log(airLine.slice(-2));
 console.log(airLine.slice(1, -2));
+
+
+
 // removes the elements how we give 
 
 
@@ -36,3 +39,11 @@ const cheackMiddleSeat = function(seat){
 cheackMiddleSeat('11B');
 cheackMiddleSeat('23C');
 cheackMiddleSeat('3E');
+
+
+// remove duplicates elements from given :
+
+let myArray = [10,22,32,10,22,31,11,10];
+
+let mySolutionOfArray = [...new Set(myArray)];
+console.log(mySolutionOfArray);
