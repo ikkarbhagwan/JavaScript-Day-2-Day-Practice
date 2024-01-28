@@ -102,3 +102,21 @@ for (let i = 1; i < array1.length; i++) {
 };
 
 console.log(result1);
+
+// 3. Removing duplicate element from an Array : 
+
+const input = [10, 12, 14, 12, 10, 12, 15, 16, 12, 15];
+
+const inputResult = [];
+
+for (let i = 1; i < input.length; i++) {
+
+    if (!inputResult.includes(input[i])) {
+        inputResult.push(input[i]);
+
+    }
+
+}
+
+console.log(inputResult);
+
