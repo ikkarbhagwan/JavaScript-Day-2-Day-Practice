@@ -1257,3 +1257,19 @@ const course = {
 
 const {coursname} = course
 console.log(coursname);
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// checking is plaindrome \\
+
+let givenStr = "level";
+
+
+let isThisPalindrome = (value) => {
+    return value.split('').reverse().join('') === givenStr;
+    
+}
+
+console.log(givenStr);
