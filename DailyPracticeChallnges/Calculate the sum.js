@@ -1293,7 +1293,7 @@ console.log(isPalindrome1("salamn"));
 
 // remove duplicates from an array in JavaScript
 
-let array2 = [1, 2, 3, 4, 4, 5, 6, 6];
+// let array2 = [1, 2, 3, 4, 4, 5, 6, 6];
 
 // let removeDupl = [...new Set(array2)];
 
@@ -1302,10 +1302,24 @@ let array2 = [1, 2, 3, 4, 4, 5, 6, 6];
 
 // using diffrent method 
 
-let removeDupl = array2.reduce( (acc, curr) => {
-    if(!acc.includes(curr)){
-        acc.push(curr);
+// let removeDupl = array2.reduce( (acc, curr) => {
+//     if(!acc.includes(curr)){
+//         acc.push(curr);
 
+//     }
+//     return acc;
+// }, []);
+
+
+let array2 = [1, 2, 3, 4, 4, 5, 6, 6];
+
+let removeTheDuplicates = array2.reduce( (accumulator, current) => {
+
+    if(!accumulator.includes(current)){
+        accumulator.push(current);
     }
-    return acc;
-}, []);
+
+    return accumulator;
+},[]);
+
+console.log(removeTheDuplicates);
