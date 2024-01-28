@@ -40,7 +40,7 @@ const promiseOne = new Promise((resolve, reject) => {
 });
 
 
-promiseOne.then(function(){
+promiseOne.then(function () {
     console.log("promise consumed");
 
 })
@@ -49,16 +49,44 @@ promiseOne.then(function(){
 
 // promise third example 
 
-const promiseThree = new Promise(function(resolve,reject){
-setTimeout(function(){
+const promiseThree = new Promise(function (resolve, reject) {
+    setTimeout(function () {
 
-    resolve({userName:"chai",email:"ikk@gmail.com"})
+        resolve({ userName: "chai", email: "ikk@gmail.com" })
 
-},1000)
+    }, 1000)
 
 });
 
-promiseThree.then(function(user){
+promiseThree.then(function (user) {
     console.log(user);
 
 });
+
+
+// promise third example 
+
+const promiseFour = new Promise(function (resolve, reject) {
+
+    setTimeout(function () {
+        let error = false
+        if (!error) {
+            resolve({ userName: "bhagwan", password: "12345" })
+        } else {
+            reject('error:something went wrong!')
+        }
+
+
+    }, 1000)
+});
+
+promiseFour.then(function (user) {
+    console.log(user);
+    return user.userName
+})
+    .then((userName) => {
+        console.log(userName);
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
