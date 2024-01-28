@@ -124,36 +124,52 @@ console.log(inputResult);
 
 // Using reduce method 
 
-let inputArray = [10,12,45,12,45,89,56];
+let inputArray = [10, 12, 45, 12, 45, 89, 56];
 
-let countResult = inputArray.reduce( (acc, currentElemnt) => {
+let countResult = inputArray.reduce((acc, currentElemnt) => {
 
-    if(!acc.includes(currentElemnt)){
+    if (!acc.includes(currentElemnt)) {
         acc.push(currentElemnt);
     }
 
     return acc;
 
 
-},[]);
+}, []);
 
 console.log(countResult);
 
 
 // Using reduce method 
 
-let giveAr= [10,12,23,45,45,12,23,45,121,89,56,45,56,12,23,23];
+let giveAr = [10, 12, 23, 45, 45, 12, 23, 45, 121, 89, 56, 45, 56, 12, 23, 23];
 
-let withReduceMethodResult = giveAr.reduce( (unique, currentIndex) => {
+let withReduceMethodResult = giveAr.reduce((unique, currentIndex) => {
 
 
-    if(!unique.includes(currentIndex)){
+    if (!unique.includes(currentIndex)) {
         unique.push(currentIndex)
     };
 
     return unique;
 
-},[]);
+}, []);
 
 
 console.log(withReduceMethodResult);
+
+
+// Write a JavaScript code for adding new elements dynamically. 
+
+
+// i have skipped the html code for proced further 
+
+const addNewElemnt = () => {
+
+    let new = document.createElement('li');
+
+    new.textContent = "new Element" ; 
+    new.setAtributes('class','note');
+    document.body.appendChild(new);
+    
+}
