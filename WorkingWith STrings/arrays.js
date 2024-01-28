@@ -85,3 +85,39 @@ arr1.sort(function(a,b){
 
 console.log(arr1.join(" "));
 
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// Write a JavaScript program to find the most frequent item in an array 
+
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+function findMostFrequentItem(arr) {
+    // Create an object to store the frequency of each item
+    let frequencyMap = {};
+    
+    // Iterate through the array and update the frequency map
+    arr.forEach(function(item) {
+        if (frequencyMap[item]) {
+            frequencyMap[item]++;
+        } else {
+            frequencyMap[item] = 1;
+        }
+    });
+
+    // Find the most frequent item and its frequency
+    let mostFrequentItem;
+    let maxFrequency = 0;
+
+    for (let item in frequencyMap) {
+        if (frequencyMap[item] > maxFrequency) {
+            mostFrequentItem = item;
+            maxFrequency = frequencyMap[item];
+        }
+    }
+
+    return `${mostFrequentItem} ( ${maxFrequency} times )`;
+}
+
+// Test Data
+var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+console.log(findMostFrequentItem(arr1));  // Output: a ( 5 times )
