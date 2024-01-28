@@ -50,14 +50,36 @@ let myArray = [10, 22, 32, 10, 22, 31, 11, 10];
 
 
 // using filter method 
-let max = [];
-let result = myArray.reduce((acc, currentValue) => {
-    if (!acc.includes(currentValue)) {
-        acc.push(currentValue);
-
-    }
-    return acc;
-}, []);
 
 
-console.log(result);
+// let result = myArray.reduce((acc, currentValue) => {
+//     if (!acc.includes(currentValue)) {
+//         acc.push(currentValue);
+
+//     }
+//     return acc;
+// }, []);
+
+
+// console.log(result);
+
+
+// find out using for loop 
+
+let given = [10, 222, 22, 11, 11, 55, 66, 44, 12, 222];
+
+const uniqueArray = [];
+
+for (let i = 1; i < given.length; i++){
+
+  const currentElemnt = given[i];
+
+  if(!uniqueArray.includes(currentElemnt)){
+
+    uniqueArray.push(currentElemnt);
+
+  }
+
+};
+
+console.log(uniqueArray);
