@@ -49,7 +49,7 @@ let myArray = [10, 22, 32, 10, 22, 31, 11, 10];
 // console.log(mySolutionOfArray);
 
 
-// using filter method 
+// using reduce method 
 
 
 // let result = myArray.reduce((acc, currentValue) => {
@@ -120,3 +120,40 @@ for (let i = 1; i < input.length; i++) {
 
 console.log(inputResult);
 
+
+
+// Using reduce method 
+
+let inputArray = [10,12,45,12,45,89,56];
+
+let countResult = inputArray.reduce( (acc, currentElemnt) => {
+
+    if(!acc.includes(currentElemnt)){
+        acc.push(currentElemnt);
+    }
+
+    return acc;
+
+
+},[]);
+
+console.log(countResult);
+
+
+// Using reduce method 
+
+let giveAr= [10,12,23,45,45,12,23,45,121,89,56,45,56,12,23,23];
+
+let withReduceMethodResult = giveAr.reduce( (unique, currentIndex) => {
+
+
+    if(!unique.includes(currentIndex)){
+        unique.push(currentIndex)
+    };
+
+    return unique;
+
+},[]);
+
+
+console.log(withReduceMethodResult);
