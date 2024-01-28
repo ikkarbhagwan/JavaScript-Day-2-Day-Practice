@@ -1348,3 +1348,20 @@ let findMaximumNumber = inputArray.reduce( (max, currentValue) => {
 
 });
 console.log(findMaximumNumber);
+
+
+// using for loop \\
+
+let numbers1 = [3, 7, 1, 9, 5, 2, 8, 4, 6];
+
+let max = numbers1[0];
+
+for (let i = 1; i < numbers1.length; i++) {
+
+    if (numbers1[i] > max) {
+
+        max = numbers1[i];
+  }
+};
+
+console.log("The maximum value is:", max);
