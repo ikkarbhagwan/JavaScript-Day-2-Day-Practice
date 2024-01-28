@@ -44,3 +44,21 @@ promiseOne.then(function(){
     console.log("promise consumed");
 
 })
+
+
+
+// promise third example 
+
+const promiseThree = new Promise(function(resolve,reject){
+setTimeout(function(){
+
+    resolve({userName:"chai",email:"ikk@gmail.com"})
+
+},1000)
+
+});
+
+promiseThree.then(function(user){
+    console.log(user);
+
+});
