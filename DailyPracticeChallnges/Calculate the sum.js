@@ -1246,3 +1246,14 @@ let x = Math.floor((Math.random() * 10) + 1);
 console.log(x);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// object distructuring 
+
+const course = {
+    coursname:"js in hindi",
+    price:"232",
+    instructor:"hitesh"
+}
+
+const {coursname} = course
+console.log(coursname);
