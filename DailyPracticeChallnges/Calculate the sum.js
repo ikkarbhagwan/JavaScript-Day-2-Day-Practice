@@ -1282,9 +1282,30 @@ function isPalindrome1(str){
 
     let reverse = str.split('').reverse().join('');
 
-    reverse === str ? "This is example of Palindrome String!" : "This is not Palindrome string Example!";
+    return reverse === str ? "This is example of Palindrome String!" : "This is not Palindrome string Example!";
 
 }
 
 console.log(isPalindrome1("Level"));
 console.log(isPalindrome1("salamn"));
+
+
+
+// remove duplicates from an array in JavaScript
+
+let array2 = [1, 2, 3, 4, 4, 5, 6, 6];
+
+// let removeDupl = [...new Set(array2)];
+
+// console.log(removeDupl);
+
+
+// using diffrent method 
+
+let removeDupl = array2.reduce( (acc, curr) => {
+    if(!acc.includes(curr)){
+        acc.push(curr);
+
+    }
+    return acc;
+}, []);
