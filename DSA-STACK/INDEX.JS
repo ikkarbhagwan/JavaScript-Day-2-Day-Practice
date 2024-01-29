@@ -61,100 +61,151 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let stack = [];
+// let stack = [];
+// stack.push(1);
+// console.log(stack);
+
+// stack.push(2);
+// console.log(stack);
+
+// stack.push(3);
+// console.log(stack);
+
+// stack.push(4)
+// console.log(stack);
+
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// stack.pop();
+// console.log(stack);
+
+// stack.pop();
+// console.log(stack);
+
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// // Reverse a string using a JavaScript stack 
+// function Reverse(str) {
+
+
+//     let stack = [];
+
+//     for (let i = 0; i < str.length; i++) {
+//         stack.push(str[i]);
+
+//     }
+//     let reverseStr = '';
+//     while (stack.length > 0) {
+//         reverseStr += stack.pop();
+
+//     }
+//     return reverseStr;
+
+
+// }
+
+// console.log(Reverse('Bhagwan Ikkar'));
+
+
+
+
+
+// function inputFiled(str) {
+
+//     let stack = [];
+
+//     for (let i = 0; i < str.length; i++) {
+//         stack.push(str[i]);
+
+//     }
+
+//     let reverseString = '';
+
+
+//     while (stack.length > 0) {
+//         reverseString = reverseString + stack.pop();
+
+//     }
+//     return reverseString;
+
+
+// }
+
+// console.log(inputFiled('jay Hanuman'));
+
+
+// /////////////////////////////////////////////////////////////////////////////
+
+// let queue = [];
+
+// let currentSize = queue.length;
+// let maxSize = 5;
+
+// function enqueue(newValue) {
+//     queue[currentSize] = newValue;
+// currentSize++;
+
+// }
+
+// function display(){
+//     console.log(queue);
+
+// }
+
+
+// display();
+// enqueue(10);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+class Stack{
+    constructor(){
+        this.item = [];
+    }
+
+    push(element){
+        this.item.push(element);
+
+    }
+
+    pop(){
+        if(this.item.length === 0){
+            return "underflow";
+                return this.item.pop();
+
+        }
+    }
+    isEmpty(){
+        return this.item.length == 0;
+
+    }
+}
+
+console.log("Initialize a stack:")
+let stack = new Stack();
+
 stack.push(1);
-console.log(stack);
-
 stack.push(2);
-console.log(stack);
-
 stack.push(3);
-console.log(stack);
-
-stack.push(4)
-console.log(stack);
+stack.push(4);
+stack.push(5);
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
 
-stack.pop();
-console.log(stack);
-
-stack.pop();
-console.log(stack);
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// Reverse a string using a JavaScript stack 
-function Reverse(str) {
-
-
-    let stack = [];
-
-    for (let i = 0; i < str.length; i++) {
-        stack.push(str[i]);
-
+class node{
+    constructor(data){
+        this.data = data;
+        this.next = null;
     }
-    let reverseStr = '';
-    while (stack.length > 0) {
-        reverseStr += stack.pop();
-
-    }
-    return reverseStr;
-
-
 }
 
-console.log(Reverse('Bhagwan Ikkar'));
-
-
-
-
-
-function inputFiled(str) {
-
-    let stack = [];
-
-    for (let i = 0; i < str.length; i++) {
-        stack.push(str[i]);
-
+class SinglyLinkedList {
+    constructor (head = null){
+        this.head = head;
     }
-
-    let reverseString = '';
-
-
-    while (stack.length > 0) {
-        reverseString = reverseString + stack.pop();
-
-    }
-    return reverseString;
-
-
 }
-
-console.log(inputFiled('jay Hanuman'));
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-let queue = [];
-
-let currentSize = queue.length;
-let maxSize = 5;
-
-function enqueue(newValue) {
-    queue[currentSize] = newValue;
-currentSize++;
-
-}
-
-function display(){
-    console.log(queue);
-
-}
-
-
-display();
-enqueue(10);
