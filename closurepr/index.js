@@ -19,19 +19,59 @@
 
 // counter 
 
-function makeCounter() {
-    let count = 1;
+// function makeCounter() {
+//     let count = 1;
 
 
-    function increment() {
-        console.log(count++)
+//     function increment() {
+//         console.log(count++)
+//     }
+
+//     return increment;
+
+// }
+
+// const counter1 = makeCounter();
+
+// counter1();
+// counter1();
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function main(){
+
+//     const name = "john doe";
+
+
+//     function chiild(){
+
+//         console.log(name);
+
+//     }
+
+//     chiild();
+
+
+// }
+// let fn = main();
+// console.log(fn);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function adder(){
+
+    const num = 10;
+    
+    function add(b){
+
+        console.log(num + b)
     }
 
-    return increment;
-
+    return add;
+    
 }
 
-const counter1 = makeCounter();
+let closure = adder(5);
 
-counter1();
-counter1();
+closure(10);
