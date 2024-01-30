@@ -1399,3 +1399,35 @@ console.log(arrayWithoutDuplicates);
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////
+
+let numbers1 = [3, 7, 1, 9, 5, 2, 8, 4, 6];
+
+let max = numbers1[0];
+
+for (let i = 1; i < numbers1.length; i++) {
+
+    if (numbers1[i] > max) {
+
+        max = numbers1[i];
+  }
+};
+
+console.log("The maximum value is:", max);
+
+
+////////////////////////////////////////////////////////////////////////////
+
+
+let finNew = [3, 7, 1, 9, 5, 2, 8, 4, 6];
+
+let maxResult = 0;
+
+for(let i =0; i <finNew.length; i++){
+
+    if(finNew[i] > max){
+        max = finNew[i];
+
+    }
+};
+console.log("The maximum value is:", max);
