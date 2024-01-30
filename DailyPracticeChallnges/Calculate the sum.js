@@ -1441,3 +1441,23 @@ console.log("The maximum value is:", max);
 let createNum22 = Math.floor(Math.random() * 100);
 
 console.log(createNum22);
+
+
+function countVowels(str){
+
+    let vowels = ["a","e","i","o","u"];
+    count++;
+
+
+    for(let char of str.toLowerCase()){
+
+        if(vowels.includes(char)){
+            count++
+        }
+
+
+    };
+
+    return count;
+
+};
