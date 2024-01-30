@@ -1374,3 +1374,28 @@ const arrayWithDuplicates = [1, 2, 3, 1, 2, 4, 5];
 const removeDuplicates2 = arrayWithDuplicates.filter( (value,index,self) => self.indexOf(value) === index)
 
 console.log(removeDuplicates2);
+
+
+
+
+///////////////////////////////////////////////////////
+
+const arrayWithDuplicatesnew = [1, 2, 3, 1, 2, 4, 5];
+
+const arrayWithDuplicatesNew = arrayWithDuplicatesnew.reduce( (acc, curr) => {
+
+    if(!acc.includes(curr)){
+        acc.push(curr);
+
+    }
+
+    return acc
+
+},[]);
+
+console.log(arrayWithoutDuplicates);
+
+
+
+
+
