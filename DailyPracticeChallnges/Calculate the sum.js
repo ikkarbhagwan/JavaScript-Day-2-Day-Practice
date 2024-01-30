@@ -1431,3 +1431,13 @@ for(let i =0; i <finNew.length; i++){
     }
 };
 console.log("The maximum value is:", max);
+
+
+////////////////////////////////////////////////////////////////////////////
+
+
+// genarate random number 
+
+let createNum22 = Math.floor(Math.random() * 100);
+
+console.log(createNum22);
