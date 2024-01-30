@@ -1480,3 +1480,19 @@ function sumArray(str){
 
 const getResult = sumArray(nestedArray2);
 console.log(getResult);
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Wait for the DOM content to be fully loaded before attaching the event handler
+    var myButton = document.getElementById('myButton');
+
+    function handleClick() {
+        alert('Button clicked!');
+    }
+
+    myButton.addEventListener('click', handleClick);
+});
