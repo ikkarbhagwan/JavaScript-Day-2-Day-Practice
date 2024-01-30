@@ -1365,3 +1365,12 @@ for (let i = 1; i < numbers1.length; i++) {
 };
 
 console.log("The maximum value is:", max);
+
+
+///////////////////////////////////////////////////////
+
+const arrayWithDuplicates = [1, 2, 3, 1, 2, 4, 5];
+
+const removeDuplicates2 = arrayWithDuplicates.filter( (value,index,self) => self.indexOf(value) === index)
+
+console.log(removeDuplicates2);
