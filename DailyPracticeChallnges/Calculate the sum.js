@@ -1461,3 +1461,22 @@ function countVowels(str){
     return count;
 
 };
+
+
+const nestedArray2 = [4, 5, [7, [1], 8], 7];
+
+function sumArray(str){
+
+
+    return arr.reduce( (sum,current) => {
+        if(Array.isArray(curr)){
+            return sum + sumArray(current);
+        }
+        return sum + current;
+
+    },0)
+};
+
+
+const getResult = sumArray(nestedArray2);
+console.log(getResult);
