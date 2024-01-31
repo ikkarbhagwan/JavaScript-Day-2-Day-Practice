@@ -1549,3 +1549,17 @@ function countVowels2(){
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+let isNew = [3, 7, 1, 9, 5, 2, 8, 4, 6];
+
+let max2 = 0;
+
+for(let i =0; i <finNew.length; i++){
+
+    if(isNew[i] > max2){
+        max2 = isNew[i];
+
+    }
+};
+console.log("The maximum value is:", max2);
