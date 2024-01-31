@@ -1505,3 +1505,47 @@ function reverseString(str) {
     return str.split('').reduce((rev, char) => char + rev, '');
   }
   
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  function countVowels(str){
+
+    let vowels = ["a","e","i","o","u"];
+    count++;
+
+
+    for(let char of str.toLowerCase()){
+
+        if(vowels.includes(char)){
+            count++
+        }
+
+
+    };
+
+    return count;
+
+};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function countVowels2(){
+
+    let vowels = ["a","e","i","o","u"];
+    count++;
+
+    for(let char of countVowels2()){
+
+        if(char.includes(char)){
+            count++
+        }
+    };
+
+    return count;
+    
+
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
