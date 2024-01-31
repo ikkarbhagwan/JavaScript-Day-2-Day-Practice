@@ -1648,3 +1648,18 @@ for (let i = 0; i <= 10; i++) {
 }
 
 console.log(sumOfNumbers);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const age = 10;
+
+if (age >= 18) {
+    console.log(`sarah is ready to get license..`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Srrah is too young try after ${yearsLeft} years!`);
+};
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
