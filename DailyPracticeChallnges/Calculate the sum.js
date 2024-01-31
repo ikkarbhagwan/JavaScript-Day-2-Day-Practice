@@ -1563,3 +1563,20 @@ for(let i =0; i <finNew.length; i++){
     }
 };
 console.log("The maximum value is:", max2);
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let array4 =  [3, 7, 1, 9, 5, 2, 8, 4, 6];
+
+let large = 0;
+
+for(let i=0; i<array4.length;i++){
+    
+    if(array4[i] > large){
+        large = array4[i];
+
+    }
+}
+console.log("The maximum value is:", max2);
