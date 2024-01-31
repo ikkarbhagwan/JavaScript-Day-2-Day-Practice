@@ -1623,5 +1623,18 @@ function sumOfArray(arr) {
 
 };
 
+// Palindrome Check:  
+
+function isPalindrome(str) {
+
+    const isYesPalindrome = str.split('').reverse().join('');
+
+    return str === isPalindrome;
+
+}
+
+console.log(isPalindrome("radar"));
+console.log(isPalindrome("hello"));
+
 
 ////////////////////////////////////////////////////////////////////////////////////////
