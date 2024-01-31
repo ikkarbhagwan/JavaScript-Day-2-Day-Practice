@@ -1607,3 +1607,21 @@ for (let i = 11; i <= 30; i += 2) {
 console.log(sum);
 
 ////////////////////////////////////////////////////////////////////////////////////////
+
+const nestedArray2 = [4, 5, [7, [1], 8], 7];
+
+function sumOfArray(arr) {
+
+    return arr.reduce((sum, current) => {
+        if (Array.isArray(current)) {
+            return sum + sumOfArray(current);
+        }
+        return sum + current;
+
+
+    }, 0)
+
+};
+
+
+////////////////////////////////////////////////////////////////////////////////////////
