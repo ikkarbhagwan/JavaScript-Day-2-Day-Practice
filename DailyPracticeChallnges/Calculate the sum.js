@@ -1663,3 +1663,44 @@ if (age >= 18) {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Days Between Dates
+
+function daysBetweenDates(date1, date2) {
+    const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
+    const diffInMilliseconds = Math.abs(date1 - date2);
+    return Math.floor(diffInMilliseconds / oneDay);
+}
+
+// Example usage:
+const startDate = new Date('2022-01-01');
+const endDate = new Date('2022-02-01');
+console.log(daysBetweenDates(startDate, endDate)); // Output: 31
+
+
+// 
+
+
+// Summing an Array
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce( (accm, curr) => {
+    return acc + curr
+
+},0)
+console.log(sum);
+
+
+// Finding the Maximum Value in an Array 
+
+const numbers = [1, 2, 3, 4, 5];
+
+const max = numbers.reduce( (acc,curr) => {
+
+    return Math.max(acc,curr);
+    
+}, -Infinity);
+
+console.log(max);
+
