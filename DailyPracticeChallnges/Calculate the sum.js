@@ -1704,3 +1704,16 @@ const max = numbers.reduce( (acc,curr) => {
 
 console.log(max);
 
+
+
+// Counting Instances of Values in an Array
+
+const fruits = ['apple', 'orange', 'banana', 'apple', 'banana', 'orange', 'apple'];
+
+const fruitCount = fruits.reduce((accumulator, currentValue) => {
+  accumulator[currentValue] = (accumulator[currentValue] || 0) + 1;
+  return accumulator;
+}, {});
+
+console.log(fruitCount);
+// Output: { apple: 3, orange: 2, banana: 2 }
