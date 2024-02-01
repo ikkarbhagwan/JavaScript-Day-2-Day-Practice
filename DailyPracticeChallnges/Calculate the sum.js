@@ -1717,3 +1717,18 @@ const fruitCount = fruits.reduce((accumulator, currentValue) => {
 
 console.log(fruitCount);
 // Output: { apple: 3, orange: 2, banana: 2 }
+
+
+const givenArray = [4, 5, [7, [1], 8], 7];
+
+function findAllSum(arr) {
+
+    return arr.reduce((sum, current) => {
+
+        return Array.isArray(current) ? sum + findAllSum(current) : sum + current;
+    }, 0)
+
+}
+
+
+const getSum = findAllSum(givenArray);
