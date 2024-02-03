@@ -83,3 +83,18 @@ const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter(num => num % 2 === 0);
 // Output: [2, 4]
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const numbers1 = [1, 2, 3, 4, 5];
+// const squaredNumbers = numbers.map(num => num ** 2);
+const squaredNumbers  = numbers1.map(num => num ** 3);
+
+console.log(squaredNumbers)
+
+// Output: [1, 4, 9, 16, 25]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
