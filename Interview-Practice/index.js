@@ -75,3 +75,11 @@ for(let i = 1; i <=factorial; i++){
 };
 
 console.log(result);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+// Output: [2, 4]
+
