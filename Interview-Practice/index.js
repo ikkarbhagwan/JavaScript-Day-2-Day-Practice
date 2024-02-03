@@ -60,3 +60,18 @@ function findMaximumNumberInArray(str){
 }
 
 console.log(findMaximumNumberInArray([1,2,4,5,6,8,9,5,8,8]));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+const  factorial = 5;
+
+let result = 1;
+
+for(let i = 1; i <=factorial; i++){
+
+    result *=i;
+
+};
+
+console.table(result);
