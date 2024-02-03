@@ -156,9 +156,13 @@ console.log(uniqueArray);
 
 
 
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const array = [1, 2, 3, 2, 4, 5, 1];
+
+const uniqueArray = array.filter((value, index, self) => {
+  return self.indexOf(value) === index;
+});
+
+console.log(uniqueArray);
