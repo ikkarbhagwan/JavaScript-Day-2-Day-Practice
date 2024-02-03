@@ -125,6 +125,22 @@ console.log(resultMethods);
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const array = [1, 2, 3, 2, 4, 5, 1];
+
+const removeDuplicatesFromArray = array.reduce( (acc, cuurentValue) =>{
+    if(!acc.includes(cuurentValue)){
+        acc.push(cuurentValue);
+        
+    }
+    return acc;
+},[]);
+
+console.log(removeDuplicatesFromArray);
+
+
 
 
 
