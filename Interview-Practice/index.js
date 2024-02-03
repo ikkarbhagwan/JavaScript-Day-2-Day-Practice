@@ -50,3 +50,13 @@ console.log(fizBuzz());
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+function findMaximumNumberInArray(str){
+
+    return Math.max(...str);
+
+
+}
+
+console.log(findMaximumNumberInArray([1,2,4,5,6,8,9,5,8,8]));
