@@ -7,3 +7,18 @@ function checkPalindrome(str) {
 }
 
 console.log(checkPalindrome("aca"));
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+function checkIsThisString(str){
+
+    return str.split('').reverse().join("");
+    
+
+}
+
+console.log(checkIsThisString("Hello mam"));
+
+
