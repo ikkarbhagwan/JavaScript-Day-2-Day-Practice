@@ -170,25 +170,24 @@ console.log(uniqueArray);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-const givenArray1 = ["marry", "spanadan", "koko", "marry", 1, 2, 4, 4, 2, 1, 3];
+// const givenArray1 = ["marry", "spanadan", "koko", "marry", 1, 2, 4, 4, 2, 1, 3];
 
-function cutDuplicates(str) {
+// function cutDuplicates(str) {
 
-    return str.filter((elem, index) => str.indexOf(elem) === index);
+//     return str.filter((elem, index) => str.indexOf(elem) === index);
 
-}
-console.log(cutDuplicates(givenArray1));
-
-
+// }
+// console.log(cutDuplicates(givenArray1));
 
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+const wrongArray = ["marry", "spanadan", "koko", "marry", 1, 2, 4, 4, 2, 1, 3];
 
+let newUniqueValue = [ ... new Set(wrongArray)];
 
-
-
+console.log(newUniqueValue);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
