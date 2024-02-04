@@ -159,10 +159,36 @@ console.log(uniqueArray);
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-const array = [1, 2, 3, 2, 4, 5, 1];
+// const array = [1, 2, 3, 2, 4, 5, 1];
 
-const uniqueArray = array.filter((value, index, self) => {
-  return self.indexOf(value) === index;
-});
+// const uniqueArray = array.filter((value, index, self) => {
+//     return self.indexOf(value) === index;
+// });
 
-console.log(uniqueArray);
+// console.log(uniqueArray);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+const givenArray1 = ["marry", "spanadan", "koko", "marry", 1, 2, 4, 4, 2, 1, 3];
+
+function cutDuplicates(str) {
+
+    return str.filter((elem, index) => str.indexOf(elem) === index);
+
+}
+console.log(cutDuplicates(givenArray1));
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
