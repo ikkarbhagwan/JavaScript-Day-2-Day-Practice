@@ -31,6 +31,6 @@ let hisName = {
     firstname:"vinod",
     lastname:"sharma"
 }
-myName.printFullName.call(hisName);
+hisName.printFullName.call(hisName);
 
 

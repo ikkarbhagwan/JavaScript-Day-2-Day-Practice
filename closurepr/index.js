@@ -75,3 +75,4 @@ function adder(){
 let closure = adder(5);
 
 closure(10);
+closure(10);
