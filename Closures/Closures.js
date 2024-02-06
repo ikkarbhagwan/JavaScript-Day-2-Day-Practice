@@ -148,12 +148,12 @@
 
 // function createButton(){
 //     let clickCount = 0;
-    
-    
+
+
 //     function handleClick(){
 //         clickCount++;
 //         console.log(`Button Clicked ${clickCount} times`);
-        
+
 
 //     }
 
@@ -216,17 +216,50 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-function main(name){
-  
+function main(name) {
 
-    function sayName(){
+
+    function sayName() {
 
         console.log(name);
 
-        }
-       return sayName;
+    }
+    return sayName;
 
 }
 
 let fn = main("Bhagwan ikkar");
 fn();
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+function adder(num) {
+
+
+    function add(b) {
+        console.log(num + b);
+    }
+
+    return add;
+}
+
+let addMe = adder(10);
+
+addMe(2);
+addMe(12);
+addMe(20);
+
+///////////////////////////////////////////////////////////////////
+
+function makeFunc() {
+    const name = "Mozilla";
+    function displayName() {
+      console.log(name);
+    }
+    return displayName;
+  }
+  
+  const myFunc = makeFunc();
+  myFunc();
+  
