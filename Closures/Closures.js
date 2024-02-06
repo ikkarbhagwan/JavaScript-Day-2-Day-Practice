@@ -263,3 +263,25 @@ function makeFunc() {
   const myFunc = makeFunc();
   myFunc();
   
+
+  ////////////////////////////////////////////////////////////
+
+  function adder(num) {
+
+
+    function add(b) {
+        console.log(num + b);
+    }
+
+    return add;
+}
+
+let addMe = adder(10);
+
+addMe(2);
+addMe(12);
+addMe(20);
+
+
+
+////////////////////////////////////////////////////////////
