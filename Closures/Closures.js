@@ -255,18 +255,18 @@ addMe(20);
 function makeFunc() {
     const name = "Mozilla";
     function displayName() {
-      console.log(name);
+        console.log(name);
     }
     return displayName;
-  }
-  
-  const myFunc = makeFunc();
-  myFunc();
-  
+}
 
-  ////////////////////////////////////////////////////////////
+const myFunc = makeFunc();
+myFunc();
 
-  function adder(num) {
+
+////////////////////////////////////////////////////////////
+
+function adder(num) {
 
 
     function add(b) {
@@ -289,29 +289,29 @@ addMe(20);
 
 function makeSizer(size) {
     return function () {
-      document.body.style.fontSize = `${size}px`;
+        document.body.style.fontSize = `${size}px`;
     };
-  }
-  
-  const size12 = makeSizer(12);
-  const size14 = makeSizer(14);
-  const size16 = makeSizer(16);
-  
+}
 
-  ////////////////////////////////////////////////////////////
+const size12 = makeSizer(12);
+const size14 = makeSizer(14);
+const size16 = makeSizer(16);
 
 
-  function myFirst() {
+////////////////////////////////////////////////////////////
+
+
+function myFirst() {
     myDisplayer("Hello");
-  }
-  
-  function mySecond() {
+}
+
+function mySecond() {
     myDisplayer("Goodbye");
-  }
-  
-  myFirst();
-  mySecond();
+}
+
+myFirst();
+mySecond();
 
 
 
-  ////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
