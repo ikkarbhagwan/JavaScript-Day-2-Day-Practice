@@ -16,201 +16,217 @@
 
 // 2
 
-const isOuterFunction = (a) => {
-    let b = 45;
+// const isOuterFunction = (a) => {
+//     let b = 45;
 
 
-    const isInnerFunction = () => {
-        let sum = a + b;
-        console.log( `The sum of two number is ${sum}`);
+//     const isInnerFunction = () => {
+//         let sum = a + b;
+//         console.log( `The sum of two number is ${sum}`);
 
-    }
-    isInnerFunction();
+//     }
+//     isInnerFunction();
 
-}
+// }
 
-    isOuterFunction(10);
+//     isOuterFunction(10);
 
-// 3
+// // 3
 
-const outer = (x) => {
-    let y = 3;
+// const outer = (x) => {
+//     let y = 3;
 
-    const inner = () => {
-        let sum = x + y;
-        console.log(` the sum of x and Y ${sum}`);
+//     const inner = () => {
+//         let sum = x + y;
+//         console.log(` the sum of x and Y ${sum}`);
 
-    }
+//     }
 
-    inner();
-}
-outer(10);
+//     inner();
+// }
+// outer(10);
 
-//////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////
 
-// Higher Order Functions 
+// // Higher Order Functions 
 
-function createMultiplier(x) {
-    return function(factor) {
-        return x * factor;
-    };
-}
+// function createMultiplier(x) {
+//     return function(factor) {
+//         return x * factor;
+//     };
+// }
 
-const double = createMultiplier(2);
-const result = double(6);
-console.log(result); // Output: 12
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// closure example 
-
-const outerFunction = () => {
-
-    let outerVariable = "Im from outer variable";
-
-    function innerfunction(){
-        console.log(outerVariable);
-
-    }
-    return innerfunction;
-}
-
-let closure = outerFunction();
-
-closure();
+// const double = createMultiplier(2);
+// const result = double(6);
+// console.log(result); // Output: 12
 
 
-// 2nd example of closure 
+// //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function counter(){
-    let count = 0;
+// // closure example 
 
-    function increment(){
-        count++;
-        console.log(count);
+// const outerFunction = () => {
 
-    }
-    function decrement()
-    {
-        count--;
-        console.log(count)
-    }
+//     let outerVariable = "Im from outer variable";
 
-    return {increment, decrement};
+//     function innerfunction(){
+//         console.log(outerVariable);
 
-}
-let myCounter = counter();
+//     }
+//     return innerfunction;
+// }
 
-myCounter.decrement();
-myCounter.increment();
-myCounter.increment();
+// let closure = outerFunction();
+
+// closure();
 
 
-// 3nd example of closure
+// // 2nd example of closure 
 
-function createCounter(){
-    let sound = 0;
+// function counter(){
+//     let count = 0;
 
-    function base(){
-        sound++;
-        console.log(sound);
+//     function increment(){
+//         count++;
+//         console.log(count);
 
-    }
+//     }
+//     function decrement()
+//     {
+//         count--;
+//         console.log(count)
+//     }
 
-    function valume(){
-        sound--;
-        console.log(sound);
+//     return {increment, decrement};
 
-    }
+// }
+// let myCounter = counter();
 
-    function reset(){
-        sound = 0;
-        console.log(`sound is ${sound} level`);
-    }
-    return {base,valume,reset};
-
-
-}
-
-
-let system = createCounter();
-
-createCounter.base();
-createCounter.valume();
+// myCounter.decrement();
+// myCounter.increment();
+// myCounter.increment();
 
 
+// // 3nd example of closure
 
+// function createCounter(){
+//     let sound = 0;
+
+//     function base(){
+//         sound++;
+//         console.log(sound);
+
+//     }
+
+//     function valume(){
+//         sound--;
+//         console.log(sound);
+
+//     }
+
+//     function reset(){
+//         sound = 0;
+//         console.log(`sound is ${sound} level`);
+//     }
+//     return {base,valume,reset};
+
+
+// }
+
+
+// let system = createCounter();
+
+// createCounter.base();
+// createCounter.valume();
 
 
 
-// Real life examples 
 
-function createButton(){
-    let clickCount = 0;
+
+
+// // Real life examples 
+
+// function createButton(){
+//     let clickCount = 0;
     
     
-    function handleClick(){
-        clickCount++;
-        console.log(`Button Clicked ${clickCount} times`);
+//     function handleClick(){
+//         clickCount++;
+//         console.log(`Button Clicked ${clickCount} times`);
         
 
-    }
+//     }
 
-    const button = document.createElement("button");
-    button.textContent = "click me";
+//     const button = document.createElement("button");
+//     button.textContent = "click me";
 
-    button.addEventListener("click",handleClick );
+//     button.addEventListener("click",handleClick );
 
-    return {button, getClickCount: ()=> clickCount};
+//     return {button, getClickCount: ()=> clickCount};
 
-}
+// }
 
-const myButton = createButton();
+// const myButton = createButton();
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// closure examples 
+// // closure examples 
 
-function main(){
+// function main(){
 
-    const name = "piyush garg"
+//     const name = "piyush garg"
 
+
+//     function sayName(){
+
+//         console.log(name);
+
+//     }
+
+//     sayName();
+
+// }
+
+// let formedClosure = main();
+
+// console.log(formedClosure);
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // practical function 
+
+// function adder(){
+
+
+//     function add(b){
+//         console.log(num + b);
+
+
+//     }
+//     return add;
+
+// }
+
+// const addto5 = adder(5);
+// const addto05 = adder(45);
+
+// addto05(55);
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+function main(name){
+  
 
     function sayName(){
 
         console.log(name);
 
-    }
-
-    sayName();
-
-}
-
-let formedClosure = main();
-
-console.log(formedClosure);
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// practical function 
-
-function adder(){
-
-
-    function add(b){
-        console.log(num + b);
-
-
-    }
-    return add;
+        }
+       return sayName;
 
 }
 
-const addto5 = adder(5);
-const addto05 = adder(45);
-
-addto05(55);
-
-
+let fn = main("Bhagwan ikkar");
+fn();
