@@ -84,3 +84,11 @@ const findCorrect = theGivenArray.reduce((acc,currentValue) => {
 },[] );
 
 console.log(findCorrect);
+
+
+// Using Set:
+
+let arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+
+let uniqueArray = [...new Set(arrayWithDuplicates)];
+console.log(uniqueArray);
