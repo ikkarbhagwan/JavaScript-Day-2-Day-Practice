@@ -60,11 +60,27 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let theGivenArray = [1,2,3,4,5,6,5,2,4,8];
+// let theGivenArray = [1,2,3,4,5,6,5,2,4,8];
 
-const answerThe = theGivenArray.filter( (value, index) => theGivenArray.indexOf(value) === index);
+// const answerThe = theGivenArray.filter( (value, index) => theGivenArray.indexOf(value) === index);
 
-console.log(answerThe);
+// console.log(answerThe);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// using reduce method
+
+let theGivenArray = [1,2,3,4,5,6,5,2,4,8];
+
+const findCorrect = theGivenArray.reduce((acc,currentValue) => {
+
+    if(!acc.includes(currentValue)){
+        acc.push(currentValue);
+
+    }
+    return acc;
+    
+},[] );
+
+console.log(findCorrect);
