@@ -14,3 +14,18 @@ const users = [
       </>
     );
   }
+
+
+  const userItems = users.map( (user) =><li key={user.id}>{user.name}</li>);
+
+  function App(){
+
+    return(
+
+      <>
+      
+      <h3>User Names : </h3>
+      <ul>{userItems}</ul>
+      </>
+    )
+  }
