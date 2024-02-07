@@ -52,8 +52,19 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// let theGivenArray = [1,2,3,4,5,6,5,2,4,8];
+
+// const findUniqueValues = theGivenArray.filter( (value,index) => theGivenArray.indexOf(value) === index);
+
+// console.log(findUniqueValues);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 let theGivenArray = [1,2,3,4,5,6,5,2,4,8];
 
-const findUniqueValues = theGivenArray.filter( (value,index) => theGivenArray.indexOf(value) === index);
+const answerThe = theGivenArray.filter( (value, index) => theGivenArray.indexOf(value) === index);
 
-console.log(findUniqueValues);
+console.log(answerThe);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
