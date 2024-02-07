@@ -120,9 +120,24 @@ function isPalindrome(str){
 
 console.log(isPalindrome('racecar')); 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+// Find the Maximum Number in an Array:
+let numbers = [4, 2, 7, 1, 9];
+let max = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+}
+console.log(max); // Output: 9
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let words = ["apple", "banana", "cherry"];
+let upperCaseWords = words.map(word => word.toUpperCase());
+console.log(upperCaseWords); // Output: ["APPLE", "BANANA", "CHERRY"]
+
+
