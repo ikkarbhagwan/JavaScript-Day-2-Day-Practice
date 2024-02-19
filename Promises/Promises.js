@@ -117,3 +117,31 @@ promiseFour.then(function (user) {
             console.log(error);
         });
     
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        const userAuthPromise = new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                let isError = false;
+                if (!isError) {
+                    resolve({ userAlias: "bhagwan", userPass: "12345" });
+                } else {
+                    reject('error: something went wrong!');
+                }
+            }, 1000);
+        });
+        
+        userAuthPromise
+            .then(function (user) {
+                console.log(user);
+                return user.userAlias;
+            })
+            .then((userAlias) => {
+                console.log(userAlias);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        
