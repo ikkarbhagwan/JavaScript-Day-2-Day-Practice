@@ -145,3 +145,30 @@ promiseFour.then(function (user) {
                 console.log(error);
             });
         
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////////
+
+            const authenticationPromise = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    let hasError = false;
+                    if (!hasError) {
+                        resolve({ userID: "bhagwan", userPassword: "12345" });
+                    } else {
+                        reject('error: something went wrong!');
+                    }
+                }, 1000);
+            });
+            
+            authenticationPromise
+                .then(function (user) {
+                    console.log(user);
+                    return user.userID;
+                })
+                .then((userID) => {
+                    console.log(userID);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            
