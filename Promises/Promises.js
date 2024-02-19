@@ -172,3 +172,32 @@ promiseFour.then(function (user) {
                     console.log(error);
                 });
             
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const userLoginPromise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+        let isError = false;
+        if (!isError) {
+            resolve({ username: "bhagwan", password: "12345" });
+        } else {
+            reject('error: something went wrong!');
+        }
+    }, 1000);
+});
+
+userLoginPromise
+    .then(function (user) {
+        console.log(user);
+        return user.username;
+    })
+    .then((username) => {
+        console.log(username);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
