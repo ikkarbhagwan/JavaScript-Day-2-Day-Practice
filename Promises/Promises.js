@@ -201,3 +201,30 @@ userLoginPromise
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    const authenticationPromise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            let hasError = false;
+            if (!hasError) {
+                resolve({ username: "bhagwan", password: "12345" });
+            } else {
+                reject('error: something went wrong!');
+            }
+        }, 1000);
+    });
+    
+    authenticationPromise
+        .then(function (user) {
+            console.log(user);
+            return user.username;
+        })
+        .then((username) => {
+            console.log(username);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
