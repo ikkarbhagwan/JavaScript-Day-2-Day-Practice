@@ -90,3 +90,30 @@ promiseFour.then(function (user) {
     .catch(function (error) {
         console.log(error);
     })
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    const loginPromise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            let error = false;
+            if (!error) {
+                resolve({ username: "bhagwan", password: "12345" });
+            } else {
+                reject('error: something went wrong!');
+            }
+        }, 1000);
+    });
+    
+    loginPromise
+        .then(function (user) {
+            console.log(user);
+            return user.username;
+        })
+        .then((username) => {
+            console.log(username);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    
