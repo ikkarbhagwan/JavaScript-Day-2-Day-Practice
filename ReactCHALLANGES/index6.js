@@ -29,3 +29,21 @@ const myComponent = () => {
         </>
     )
 }
+
+
+// / data binding 
+
+const MyColl = () => {
+
+    const [value1, setvalue1] = useState(" ");
+
+}
+
+return(
+    <>
+    <input onChange={ (e) => setvalue1(E.value1.target)} value1={value1} type="text" placeholder="Enter Text" />
+
+    </>
+);
+
+export default MyColl;
