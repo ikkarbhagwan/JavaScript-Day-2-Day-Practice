@@ -14,3 +14,12 @@ function reversedString(str) {
 
 console.log(reversedString("hello"));
 
+// 2.
+
+function getReversed(str){
+
+    return str.split("").reverse().join("");
+
+}
+
+console.log(getReversed("papa"));
