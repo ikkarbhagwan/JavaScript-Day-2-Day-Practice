@@ -43,3 +43,18 @@ function returnLongestWord(sentence) {
 }
 
 console.log(returnLongestWord("i love my india"));
+
+
+// check is plaindrome or not
+
+
+const isPalindrome = (str) =>{
+
+    const reverseSentence = str.split("").reverse("").join("");
+
+    return str = reverseSentence;
+
+}
+
+console.log(isPalindrome("racecar"));
+
