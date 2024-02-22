@@ -58,3 +58,12 @@ const isPalindrome = (str) =>{
 
 console.log(isPalindrome("racecar"));
 
+//////////////////////////////////////////////////////////////
+
+function findMaxNumber (arr){
+
+    return Math.max(...arr);
+
+}
+
+console.log(findMaxNumber([12,23,56,86,45,12]));
