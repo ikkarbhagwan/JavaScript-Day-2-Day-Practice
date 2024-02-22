@@ -67,3 +67,14 @@ function findMaxNumber (arr){
 }
 
 console.log(findMaxNumber([12,23,56,86,45,12]));
+
+
+// Remove Duplicates from an Array:
+
+function removeWrongItems(arr){
+
+    return arr.filter( (item, index) => arr.indexOf(item) === index);
+
+}
+console.log(removeWrongItems([12,54,21,54,12,32,45,54]));
+
