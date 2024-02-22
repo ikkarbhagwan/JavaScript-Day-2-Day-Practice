@@ -101,3 +101,16 @@ function areAnagrams(str1,str2){
 }
 
 console.log(areAnagrams("listen", "silent"));
+
+
+// Find the Missing Number in an Array:
+
+function findMissingNumber(arr){
+    const n = arr.length + 1;
+    const sum = (n * (n + 1)) / 2;
+    const arrSum = arr.reduce( (acc,cur) => acc + cur, 0);
+    return sum - arrSum;
+
+}
+
+console.log(findMissingNumber([1,2,3,4,5,7,8]));
