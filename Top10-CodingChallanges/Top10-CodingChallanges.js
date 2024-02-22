@@ -114,3 +114,14 @@ function findMissingNumber(arr){
 }
 
 console.log(findMissingNumber([1,2,3,4,5,7,8]));
+
+
+// Reverse Words in a String:
+
+
+function reverseWords(str) {
+    return str.split(" ").reverse().join(" ");
+  }
+  
+  console.log(reverseWords("hello world")); // Output: "world hello"
+  
