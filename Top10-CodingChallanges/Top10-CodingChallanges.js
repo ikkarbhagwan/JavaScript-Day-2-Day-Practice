@@ -88,3 +88,16 @@ function flattenArray(arr){
 }
 
 console.log(flattenArray([1, [2, [3, 4], 5], 6]));
+
+
+// Check if two strings are anagrams:
+
+function areAnagrams(str1,str2){
+
+    const sortedStr1 = str1.split("").sort().join("");
+    const sortedStr2 = str2.split("").sort().join("");
+    return sortedStr1 === sortedStr2;
+
+}
+
+console.log(areAnagrams("listen", "silent"));
