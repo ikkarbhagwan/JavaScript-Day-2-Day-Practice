@@ -78,3 +78,13 @@ function removeWrongItems(arr){
 }
 console.log(removeWrongItems([12,54,21,54,12,32,45,54]));
 
+
+// Write a function to flatten a nested array.
+
+function flattenArray(arr){
+
+    return arr.reduce( (acc,currentValue) => Array.isArray(currentValue) ? acc.concat(flattenArray(currentValue)) : acc.concat(currentValue),[]);
+
+}
+
+console.log(flattenArray([1, [2, [3, 4], 5], 6]));
